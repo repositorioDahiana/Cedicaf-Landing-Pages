@@ -12,7 +12,7 @@ import estudiosIcon from "../../assets/Iconos/email.png";
 
 function LocationsPreview() {
 
-  const [activeCity, setActiveCity] = useState("Villavicencio");
+  const [activeCity, setActiveCity] = useState("Pereira");
 
   const [selectedLocation, setSelectedLocation] = useState(null);
 
@@ -20,20 +20,19 @@ function LocationsPreview() {
 
     {
       id: 1,
-      city: "Villavicencio",
+      city: "Pereira",
 
       image: losRosalesImg,
 
-      title: "Diaxme Sede Villavicencio",
+      title: "Cedicaf Sede Pereira",
 
-      address: "Carrera 34 No. 15-33 Barrio Nuevo Ricaurte",
+      address: "Cra. 15 No 13-28 Barrio Los Alpes",
 
       maps:
         "https://www.google.com/maps/search/?api=1&query=Carrera+9+No+25-59+Pereira",
 
-      schedule1: "Ambulatorios (L-S): 7:00 a.m. – 6:00 p.m.",
-
-      schedule2: "Hospitalarios: 24 x 7",
+      schedule1: "L-V: 6:00 a.m. – 10:00 p.m.",
+      schedule2: "S: 6:00 a.m. – 10:00 p.m.",
 
       featured: false,
 
@@ -45,20 +44,19 @@ function LocationsPreview() {
 
     {
       id: 2,
-      city: "Acacías",
+      city: "Armenia",
 
       image: comfamiliarImg,
 
-      title: "Diaxme Sede Acacías",
+      title: "Cedicaf Sede Armenia",
 
-      address: "Calle 13 N° 16-58 Primer Piso",
+      address: "Cl 2 N 12-32 Alcázar",
 
       maps:
         "https://www.google.com/maps/search/?api=1&query=Avenida+Circunvalar+Pereira",
 
-      schedule1: "L-V: 6:00 a.m. – 9:00 p.m.",
-
-      schedule2: "S: 6:00 a.m. – 6:00 p.m.",
+      schedule1: "L-V: 24/7.",
+      schedule2: "S: 6:00 a.m. – 12:00 p.m.",
 
       featured: false,
 
@@ -68,9 +66,62 @@ function LocationsPreview() {
         "Texto",
       ],
     },
+
+
+    {
+      id: 4,
+      city: "Ibague",
+      image: centroMedicoImg,
+      title: "Cedicaf Sede Ibagué Resonancia",
+      address: "Calle 18 No 7-102 Barrio Interlaken",
+      schedule1: "L-V: 8:00 a.m. – 7:00 p.m.",
+      schedule2: "S: 7:00 a.m. – 1:00 p.m.",
+      featured: false,
+      maps:
+        "https://www.google.com/maps/search/?api=1&query=Avenida+Circunvalar+Pereira",
+      studies: [
+        "Texto",
+        "Texto",
+        "Texto",
+      ],
+    },
+    {
+      id: 5,
+      city: "Ibague",
+      image: pinaresImg,
+      title: "Cedicaf Sede Ibagué Medicina Nuclear",
+      address: "Calle 18 N 7-88 Barrio Interlaken",
+      schedule1: "L-V: 8:00 a.m. – 7:00 p.m.",
+      schedule2: "S: 7:00 a.m. – 1:00 p.m.",
+      featured: false,
+      maps:
+        "https://www.google.com/maps/search/?api=1&query=Avenida+Circunvalar+Pereira",
+      studies: [
+        "Texto",
+        "Texto",
+        "Texto",
+      ],
+    },
+    {
+      id: 6,
+      city: "Tulua",
+      image: losRosalesImg,
+      title: "Cedicaf Sede Tuluá",
+      address: "Carrera 34 No 27-33",
+      schedule1: "L-V: 6:00 a.m. – 10:00 p.m.",
+      schedule2: "S: 6:00 a.m. – 10:00 p.m.",
+      featured: false,
+      maps:
+        "https://www.google.com/maps/search/?api=1&query=Avenida+Circunvalar+Pereira",
+      studies: [
+        "Texto",
+        "Texto",
+        "Texto",
+      ],
+    },
   ];
 
-  const cities = ["Villavicencio", "Acacías"];
+  const cities = ["Pereira", "Armenia", "Tulua", "Ibague"];
 
   const filteredHeadquarters = useMemo(() => {
     return headquarters.filter((item) => item.city === activeCity);
@@ -105,11 +156,10 @@ function LocationsPreview() {
                 <button
                   key={city}
                   type="button"
-                  className={`locations-preview__tab ${
-                    activeCity === city
+                  className={`locations-preview__tab ${activeCity === city
                       ? "locations-preview__tab--active"
                       : ""
-                  }`}
+                    }`}
                   onClick={() => setActiveCity(city)}
                 >
                   {city}
@@ -128,11 +178,10 @@ function LocationsPreview() {
 
               <article
                 key={item.id}
-                className={`locations-preview__card ${
-                  item.featured
+                className={`locations-preview__card ${item.featured
                     ? "locations-preview__card--featured"
                     : ""
-                }`}
+                  }`}
                 onClick={() => setSelectedLocation(item)}
               >
 
