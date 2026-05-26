@@ -63,7 +63,7 @@ function ApplySection() {
           <div className="apply__checkbox">
             <input type="checkbox" id="privacy" />
             <label htmlFor="privacy">
-              Acepto la política de tratamiento de datos personales de Radiólogos Asociados.
+              Acepto la política de tratamiento de datos personales de Cedicaf.
             </label>
           </div>
 
