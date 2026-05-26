@@ -20,7 +20,7 @@ function CareersHero() {
           </h1>
 
           <p className="careers-hero__description">
-            En Radiólogos Asociados creemos en el talento, la pasión y el
+            En Cedicaf creemos en el talento, la pasión y el
             compromiso. Sé parte de una institución líder en el sector salud,
             donde podrás crecer profesionalmente y aportar al bienestar de miles
             de personas.

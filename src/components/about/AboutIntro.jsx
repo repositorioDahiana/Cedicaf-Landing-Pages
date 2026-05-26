@@ -1,7 +1,7 @@
-import experienciaIcon from "../../assets/Iconos/email.png";
-import pacientesIcon from "../../assets/Iconos/email.png";
-import sedesIcon from "../../assets/Iconos/email.png";
-import empresasIcon from "../../assets/Iconos/email.png";
+import experienciaIcon from "../../assets/Iconos/Tiempo.png";
+import pacientesIcon from "../../assets/Iconos/ResonanciaPaciente.png";
+import sedesIcon from "../../assets/Iconos/Ubicacion.png";
+import empresasIcon from "../../assets/Iconos/company.png";
 
 function AboutIntro() {
   return (
@@ -31,7 +31,7 @@ function AboutIntro() {
 
         <div className="about-intro__card">
           <img src={sedesIcon} />
-          <h3>+6</h3>
+          <h3>+5</h3>
           <span>Sedes en Colombia</span>
         </div>
 

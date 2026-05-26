@@ -67,7 +67,7 @@ function ApplySection() {
             </label>
           </div>
 
-          <button type="submit" className="btn-base btn-primary-blue">
+          <button type="submit" className="btn-base btn-primary-brand">
             Enviar postulación
           </button>
 

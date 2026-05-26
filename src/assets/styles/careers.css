@@ -230,8 +230,8 @@ body {
   text-decoration: none;
   
   /* Estado estático: Gris oscuro profesional */
-  background: #575b63; 
-  color: var(--color-white);
+  background: #ececec;; 
+  color: var(--color-brand-main);
   border: 1px solid transparent;
   box-shadow: var(--shadow-card);
   

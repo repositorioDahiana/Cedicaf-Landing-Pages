@@ -1,6 +1,6 @@
 import logoRadiolgos from "../../assets/Iconos/logo-radiologos.png";
 import logoDiaxme from "../../assets/Iconos/logo-dioxme.png";
-import consultarCitaIcon from "../../assets/Iconos/NavConsulta.png";
+import consultarCitaIcon from "../../assets/Iconos/ConsultarCita.png";
 import telefonoIcon from "../../assets/Iconos/Telefono.png";
 import resultadosIcon from "../../assets/Iconos/Resultados.png";
 import pseIcon from "../../assets/Iconos/pse.png";

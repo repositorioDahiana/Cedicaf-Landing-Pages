@@ -5,8 +5,8 @@ import especialistasHero from "../../assets/images/Fondo.jpg";
 import clinicaHero from "../../assets/images/Fondo.jpg";
 import resultadosIcon from "../../assets/Iconos/Resultados.png";
 import agendarIcon from "../../assets/Iconos/Resonancia.png";
-import experienciaIcon from "../../assets/Iconos/Tiempo.png";
-import sedesIcon from "../../assets/Iconos/Ubicacion.png";
+import experienciaIcon from "../../assets/Iconos/Reloj.png";
+import sedesIcon from "../../assets/Iconos/Sede.png";
 import pacientesIcon from "../../assets/Iconos/Resonancia.png";
 
 const slides = [
@@ -131,7 +131,7 @@ function Hero() {
                 className="hero__statIcon hero__statIcon--sedes"
               />
               <div className="hero__statText">
-                <div className="hero__statNumber">6+</div>
+                <div className="hero__statNumber">5+</div>
                 <div className="hero__statLabel">Sedes</div>
               </div>
             </div>

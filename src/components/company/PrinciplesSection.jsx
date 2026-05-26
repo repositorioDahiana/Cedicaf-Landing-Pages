@@ -1,5 +1,5 @@
-import eficienciaIcon from "../../assets/Iconos/email.png";
-import servicioIcon from "../../assets/Iconos/email.png";
+import eficienciaIcon from "../../assets/Iconos/eficiencia.png";
+import servicioIcon from "../../assets/Iconos/servicio.png";
 import igualdadIcon from "../../assets/Iconos/email.png";
 import compromisoIcon from "../../assets/Iconos/email.png";
 import equipoIcon from "../../assets/Iconos/email.png";

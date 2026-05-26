@@ -1,9 +1,9 @@
 import bgValores from "../../assets/images/Fondo.jpg";
 
-import pasionIcon from "../../assets/Iconos/email.png";
-import transparenciaIcon from "../../assets/Iconos/email.png";
-import empatiaIcon from "../../assets/Iconos/email.png";
-import respetoIcon from "../../assets/Iconos/email.png";
+import pasionIcon from "../../assets/Iconos/pasion.png";
+import transparenciaIcon from "../../assets/Iconos/transparencia.png";
+import empatiaIcon from "../../assets/Iconos/empatia.png";
+import respetoIcon from "../../assets/Iconos/respeto.png";
 
 function ValuesSection() {
   return (
