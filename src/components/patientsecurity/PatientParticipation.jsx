@@ -21,7 +21,7 @@ function PatientParticipation() {
           </h2>
 
           <p className="patient-participation__description">
-            RADIÓLOGOS ASOCIADOS ofrece sus servicios a usuarios afiliados
+            CEDICAF S.A ofrece sus servicios a usuarios afiliados
             al sistema General de Seguridad Social en Salud.
           </p>
 
@@ -48,7 +48,7 @@ function PatientParticipation() {
           <div className="patient-participation__content">
 
             <p>
-              RADIÓLOGOS ASOCIADOS ofrece sus servicios a usuarios afiliados
+              CEDICAF S.A ofrece sus servicios a usuarios afiliados
               al sistema General de Seguridad Social en Salud del régimen
               contributivo, subsidiado, especial y seguros privados, quienes
               tienen como derecho velar por la mejora continua de la calidad

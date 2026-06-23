@@ -23,7 +23,7 @@ function HistoryTimeline() {
               <h3>Nace CEDICAF S.A.</h3>
               <p>
                 Como respuesta al crecimiento del sector y la evolución tecnológica, 
-                se crea CEDICAF S.A., especializada en resonancia magnética en el Eje Cafetero. 
+                se crea  el Centro Diagnostico de Alta Tenologia CEDICAF S.A., especializada en resonancia magnética en el Eje Cafetero. 
               </p>
             </div>
 
