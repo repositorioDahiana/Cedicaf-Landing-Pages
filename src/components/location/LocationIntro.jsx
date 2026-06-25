@@ -1,14 +1,14 @@
 import { useMemo, useState } from "react";
 
-import losRosalesImg from "../../assets/images/Fondo.jpg";
-import comfamiliarImg from "../../assets/images/Fondo.jpg";
-import sanRafaelImg from "../../assets/images/Fondo.jpg";
-import centroMedicoImg from "../../assets/images/Fondo.jpg";
-import pinaresImg from "../../assets/images/Fondo.jpg";
+import ubi1 from "../../assets/images/Ubicacion1.png";
+import ubi2 from "../../assets/images/Ubicacion2.jpg";
+import ubi3 from "../../assets/images/Ubicacion3.png";
+import ubi4 from "../../assets/images/Ubicacion4.jpg";
+import ubi5 from "../../assets/images/Ubicacion5.png";
 
 import ubicacionIcon from "../../assets/Iconos/Ubicacion.png";
-import relojIcon from "../../assets/Iconos/email.png";
-import estudiosIcon from "../../assets/Iconos/email.png";
+import relojIcon from "../../assets/Iconos/Tiempo.png";
+import estudiosIcon from "../../assets/Iconos/Especialidad1.png";
 
 function LocationsPreview() {
 
@@ -21,49 +21,37 @@ function LocationsPreview() {
     {
       id: 1,
       city: "Pereira",
-
-      image: losRosalesImg,
-
+      image: ubi1,
       title: "Cedicaf Sede Pereira",
-
       address: "Cra. 15 No 13-28 Barrio Los Alpes",
-
-      maps:
-        "https://www.google.com/maps/search/?api=1&query=Carrera+9+No+25-59+Pereira",
-
       schedule1: "L-V: 6:00 a.m. – 10:00 p.m.",
       schedule2: "S: 6:00 a.m. – 10:00 p.m.",
-
       featured: false,
-
+      mapsUrl: "https://maps.google.com/?q=Cedicaf+Pereira+Los+Alpes",
       studies: [
-        "Texto",
-        "Texto",
+        "Resonancias convencionales (simples, contrastadas y bajo sedación)",
+        "Resonancias Especiales (Próstata, glúteos, Enteroresonancia, Uroresonancia y defecografía)",
+        "Angiorresonancias de cerebro y cuello",
+        "Resonancia con protocolo de Recto",
+        "Resonancia de Corazón"
       ],
     },
 
     {
       id: 2,
       city: "Armenia",
-
-      image: comfamiliarImg,
-
+      image: ubi2,
       title: "Cedicaf Sede Armenia",
-
       address: "Cl 2 N 12-32 Alcázar",
-
-      maps:
-        "https://www.google.com/maps/search/?api=1&query=Avenida+Circunvalar+Pereira",
-
       schedule1: "L-V: 24/7.",
       schedule2: "S: 6:00 a.m. – 12:00 p.m.",
-
       featured: false,
-
+      mapsUrl: "https://maps.google.com/?q=Cedicaf+Armenia",
       studies: [
-        "Texto",
-        "Texto",
-        "Texto",
+        "Resonancias convencionales (simples, contrastadas y bajo sedación)",
+        "Resonancias Especiales (Próstata, glúteos, Enteroresonancia, Uroresonancia, defecografía y angiorresonancias de cerebro y cuello)",
+        "Tomografías convencionales (simples, contrastadas y bajo sedación)",
+        "Angiotomografías de cerebro, cuello, tórax y abdomen (Multicorte y tridimensional)"
       ],
     },
 
@@ -71,52 +59,59 @@ function LocationsPreview() {
     {
       id: 4,
       city: "Ibague",
-      image: centroMedicoImg,
+      image: ubi5,
       title: "Cedicaf Sede Ibagué Resonancia",
       address: "Calle 18 No 7-102 Barrio Interlaken",
       schedule1: "L-V: 8:00 a.m. – 7:00 p.m.",
       schedule2: "S: 7:00 a.m. – 1:00 p.m.",
       featured: false,
-      maps:
-        "https://www.google.com/maps/search/?api=1&query=Avenida+Circunvalar+Pereira",
+      mapsUrl: "https://maps.google.com/?q=Cedicaf+Resonancia+Ibagué",
       studies: [
-        "Texto",
-        "Texto",
-        "Texto",
-      ],
+        "Resonancias convencionales (simples, contrastadas y bajo sedación)",
+        "Resonancias Especiales (Próstata, glúteos, Enteroresonancia, Uroresonancia, defecografía y angiorresonancias de cerebro y cuello)"
+      ]
     },
     {
       id: 5,
       city: "Ibague",
-      image: pinaresImg,
+      image: ubi4,
       title: "Cedicaf Sede Ibagué Medicina Nuclear",
       address: "Calle 18 N 7-88 Barrio Interlaken",
       schedule1: "L-V: 8:00 a.m. – 7:00 p.m.",
       schedule2: "S: 7:00 a.m. – 1:00 p.m.",
       featured: false,
-      maps:
-        "https://www.google.com/maps/search/?api=1&query=Avenida+Circunvalar+Pereira",
+      mapsUrl: "https://maps.google.com/?q=Cedicaf+Medicina+Nuclear+Ibagué",
       studies: [
-        "Texto",
-        "Texto",
-        "Texto",
+        "Resonancias convencionales (simples, contrastadas y bajo sedación)",
+        "Resonancias Especiales (Próstata, glúteos, Enteroresonancia, Uroresonancia, defecografía y angiorresonancias de cerebro y cuello)",
+        "Medicina Nuclear: Gammagrafías (corporal, tiroides, pulmonar), Perfusión miocárdica, Renograma y Captación Tiroidea 4-24 Horas"
       ],
     },
     {
       id: 6,
       city: "Tulua",
-      image: losRosalesImg,
+      image: ubi3,
       title: "Cedicaf Sede Tuluá",
       address: "Carrera 34 No 27-33",
       schedule1: "L-V: 6:00 a.m. – 10:00 p.m.",
       schedule2: "S: 6:00 a.m. – 10:00 p.m.",
       featured: false,
-      maps:
-        "https://www.google.com/maps/search/?api=1&query=Avenida+Circunvalar+Pereira",
+      mapsUrl: "https://maps.google.com/?q=Cedicaf+Tuluá",
       studies: [
-        "Texto",
-        "Texto",
-        "Texto",
+        "Resonancias convencionales (simples, contrastadas y bajo sedación)",
+        "Resonancias Especiales (Próstata, glúteos, Enteroresonancia, Uroresonancia, defecografía y angiorresonancias de cerebro y cuello)",
+        "Tomografías convencionales (simples, contrastadas y bajo sedación)",
+        "Angiotomografías de cerebro, cuello, tórax y abdomen (Multicorte y tridimensional)",
+        "Radiografías convencionales y Panorámicas",
+        "Ecografías convencionales y Doppler",
+        "Consulta de Cardiología Adulto y Pediátrica",
+        "Monitoreo de presión arterial (MAPA)",
+        "Holter",
+        "Electrocardiograma",
+        "Pruebas de Esfuerzo",
+        "Ecocardiograma Transtorácico",
+        "Ecocardiograma Stress con Ejercicio",
+        "Tomas de muestras de Laboratorio"
       ],
     },
   ];
@@ -330,10 +325,10 @@ function LocationsPreview() {
               <div className="locations-modal__actions">
 
                 <a
-                  href={selectedLocation.maps}
+                  href={selectedLocation.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-base btn-primary-blue"
+                  className="btn-base btn-primary-brand"
                 >
                   Ver ubicación
                 </a>

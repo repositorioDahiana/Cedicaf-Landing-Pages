@@ -1,4 +1,4 @@
-import techImg from "../../assets/images/Fondo.jpg";
+import techImg from "../../assets/images/Tecnologia.png";
 
 import equipoIcon from "../../assets/Iconos/email.png";
 import certificacionIcon from "../../assets/Iconos/email.png";

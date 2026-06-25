@@ -12,11 +12,6 @@ function AlliesIntro() {
             mejores entidades
           </span>
         </h2>
-
-        <p className="allies-intro__description">
-          ?? Texto
-        </p>
-
         <a
           href="#medicinaprepagada"
           className="btn-base btn-primary-brand"

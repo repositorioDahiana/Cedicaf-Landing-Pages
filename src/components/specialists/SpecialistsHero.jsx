@@ -1,4 +1,4 @@
-import especialistasHero from "../../assets/images/Fondo.jpg";
+import especialistasHero from "../../assets/images/EspecialistaHero.png";
 
 function SpecialistsHero() {
   return (
@@ -16,7 +16,7 @@ function SpecialistsHero() {
           </h1>
 
           <p className="specialists-hero__description">
-            ?? Texto
+            Conoce a nuestro equipo multidisciplinario de médicos especialistas. Profesionales de primer nivel en constante actualización, comprometidos con la precisión diagnóstica, la ética profesional y la calidez humana que tú y tu familia necesitan en cada etapa de su atención
           </p>
 
           <div className="specialists-hero__actions">

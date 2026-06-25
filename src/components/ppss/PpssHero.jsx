@@ -1,4 +1,4 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import heroBg from "../../assets/images/PPSS.png";
 import controlIcon from "../../assets/Iconos/email.png";
 import comunidadIcon from "../../assets/Iconos/email.png";
 import capacitacionIcon from "../../assets/Iconos/email.png";

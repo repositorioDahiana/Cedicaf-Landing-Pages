@@ -1,34 +1,21 @@
-import heroBg from "../../assets/images/Fondo.jpg";
-import medicinaIcon from "../../assets/Iconos/email.png";
+import heroBg from "../../assets/images/Aliados1.png";
+import medicinaIcon from "../../assets/Iconos/Aliados1.png";
 
 // ICONOS CARDS
-import Icono1 from "../../assets/Iconos/email.png";
-import Icono2 from "../../assets/Iconos/email.png";
-import Icono3 from "../../assets/Iconos/email.png";
-import Icono4 from "../../assets/Iconos/email.png";
+import logo1 from "../../assets/images/LogoCoomeva.png";
+import logo2 from "../../assets/images/LogoColsanitas.png";
+import logo3 from "../../assets/images/LogoColmedica.png";
+import logo4 from "../../assets/images/LogoMedisanitas.png";
+import logo5 from "../../assets/images/LogoMedPlus.png";
 
 
 
 const allies = [
-  {
-    icon: Icono1,
-    name: "Texto",
-  },
-
-  {
-    icon: Icono2,
-    name: "Texto",
-  },
-
-  {
-    icon: Icono3,
-    name: "Texto",
-  },
-
-  {
-    icon: Icono4,
-    name: "Texto",
-  },
+  { name: "Coomeva", icon: logo1 },
+  { name: "Colsanitas S.A.", icon: logo2 },
+  { name: "Colmedica S.A.", icon: logo3 },
+  { name: "Medisanitas", icon: logo4 },
+  { name: "Medplus S.A", icon: logo5 },
 
 ];
 
@@ -64,7 +51,7 @@ function AlliesPrepaid() {
               </h2>
 
               <p className="allies-prepaid__subtitle">
-                ? entidades aliadas
+                5 entidades aliadas
               </p>
 
             </div>

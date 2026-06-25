@@ -6,7 +6,6 @@ import AlliesPrepaid from "../components/allies/AlliesPrepaid";
 import AlliesPols from "../components/allies/AlliesPols";
 import AlliesRegEspcial from "../components/allies/AlliesRegEspcial";
 import AlliesConEmp from "../components/allies/AlliesConEmp";
-import AlliesCaja from "../components/allies/AlliesCaja";
 
 function Ppss() {
   return (
@@ -17,7 +16,6 @@ function Ppss() {
       <AlliesPols />
       <AlliesConEmp />
       <AlliesRegEspcial />
-      <AlliesCaja />
     </div>
   );
 }

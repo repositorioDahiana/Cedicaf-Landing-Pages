@@ -1,9 +1,9 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import heroBg from "../../assets/images/Sedes.png";
 
 // ICONOS
-import sedesIcon from "../../assets/Iconos/email.png";
-import ciudadesIcon from "../../assets/Iconos/email.png";
-import horarioIcon from "../../assets/Iconos/email.png";
+import sedesIcon from "../../assets/Iconos/Location.png";
+import ciudadesIcon from "../../assets/Iconos/Empre.png";
+
 
 function LocationsHero() {
   return (
@@ -42,7 +42,7 @@ function LocationsHero() {
               <div className="locations-hero__text">
 
                 <span className="locations-hero__label">
-                  8 Sedes
+                  5 Sedes
                 </span>
 
                 <span className="locations-hero__desc">
@@ -64,7 +64,7 @@ function LocationsHero() {
               <div className="locations-hero__text">
 
                 <span className="locations-hero__label">
-                  3 Ciudades
+                  4 Ciudades
                 </span>
 
                 <span className="locations-hero__desc">
@@ -74,29 +74,6 @@ function LocationsHero() {
               </div>
 
             </div>
-
-            {/* CARD 3 */}
-            <div className="locations-hero__stat">
-
-              <img
-                src={horarioIcon}
-                alt="Atención"
-              />
-
-              <div className="locations-hero__text">
-
-                <span className="locations-hero__label">
-                  24/7 Atención
-                </span>
-
-                <span className="locations-hero__desc">
-                  Servicio hospitalario
-                </span>
-
-              </div>
-
-            </div>
-
           </div>
 
         </div>

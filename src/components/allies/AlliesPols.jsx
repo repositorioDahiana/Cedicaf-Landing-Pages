@@ -1,35 +1,19 @@
-import heroBg from "../../assets/images/Fondo.jpg";
-import medicinaIcon from "../../assets/Iconos/email.png";
+import heroBg from "../../assets/images/Aliados2.png";
+import medicinaIcon from "../../assets/Iconos/Aliados2.png";
 
-// ICONOS CARDS
-import Icono1 from "../../assets/Iconos/email.png";
-import Icono2 from "../../assets/Iconos/email.png";
-import Icono3 from "../../assets/Iconos/email.png";
-import Icono4 from "../../assets/Iconos/email.png";
+import logo6 from "../../assets/images/LogoSura.png";
+import logo7 from "../../assets/images/LogoSeguroBol.png";
+import logo8 from "../../assets/images/LogoAxaColpatria.png";
+import logo9 from "../../assets/images/LogoAllianz.png";
+import logo10 from "../../assets/images/LogoPositiva.png";
 
 
 const allies = [
-  {
-    icon: Icono1,
-    name: "Texto",
-  },
-
-  {
-    icon: Icono2,
-    name: "Texto",
-  },
-
-  {
-    icon: Icono3,
-    name: "Texto",
-  },
-
-  {
-    icon: Icono4,
-    name: "Texto",
-  },
-
- 
+  { name: "Seguros De Vida Suramericana S.A", icon: logo6 },
+  { name: "Seguros Bolivar S.A.", icon: logo7 },
+  { name: "Axa Colpatria Seguros De Vida S.A", icon: logo8 },
+  { name: "Allianz Seguros De Vida S.A", icon: logo9 },
+  { name: "Positiva Compañía De Seguros", icon: logo10 },
 ];
 
 function AlliesPols() {
@@ -64,7 +48,7 @@ function AlliesPols() {
               </h2>
 
               <p className="allies-prepaid__subtitle">
-                ? entidades aliadas
+                5 entidades aliadas
               </p>
 
             </div>

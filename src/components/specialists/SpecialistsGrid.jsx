@@ -1,74 +1,60 @@
-import img1 from "../../assets/images/Fondo.jpg";
-import img2 from "../../assets/images/Fondo.jpg";
-import img3 from "../../assets/images/Fondo.jpg";
-import img4 from "../../assets/images/Fondo.jpg";
-import img5 from "../../assets/images/Fondo.jpg";
-import img6 from "../../assets/images/Fondo.jpg";
-import img7 from "../../assets/images/Fondo.jpg";
-import img8 from "../../assets/images/Fondo.jpg";
-import img9 from "../../assets/images/Fondo.jpg";
-import img10 from "../../assets/images/Fondo.jpg";
-import img11 from "../../assets/images/Fondo.jpg";
-import img12 from "../../assets/images/Fondo.jpg";
-import img13 from "../../assets/images/Fondo.jpg";
-import img14 from "../../assets/images/Fondo.jpg";
-import img15 from "../../assets/images/Fondo.jpg";
+import doc1 from "../../assets/images/Doctor1.png";
+import doc2 from "../../assets/images/Doctor2.png";
+import doc3 from "../../assets/images/Doctor3.png";
+import doc4 from "../../assets/images/Doctor4.jpeg";
+import doc5 from "../../assets/images/Doctor5.jpeg";
 
 const specialists = [
   {
     id: 1,
-    name: "Dr. Carlos Andrés Mejía",
-    specialty: "Radiología Diagnóstica",
-    sub: "Neurorradiología",
-    exp: "18 años de experiencia",
-    tags: ["Resonancia Magnética", "Neurorradiología"],
-    image: img1,
+    name: "Dra. Margarita Maria Patiño Arenas",
+    specialty: "Médico Radiólogo",
+    experience: "Radiología",
+    image: doc1
   },
   {
     id: 2,
-    name: "Dra. Marcela Ríos Ospina",
-    specialty: "Radiología e Imágenes Diagnósticas",
-    sub: "Radiología de Mama",
-    exp: "14 años de experiencia",
-    tags: ["Mamografía", "Ecografía Mamaria"],
-    image: img2,
+    name: "Dra. Ingrid Vivas",
+    specialty: "Médico Radiólogo / Especialista en mamas",
+    experience: "Especialista en Mamas",
+    image: doc2,
   },
-  // 👇 puedes repetir patrón hasta 15
   {
     id: 3,
-    name: "Dr. Hernán Darío Zuluaga",
-    specialty: "Cardiología",
-    sub: "Ecocardiografía",
-    exp: "22 años de experiencia",
-    tags: ["Ecocardiografía", "Holter"],
-    image: img3,
+    name: "Dr. Juan Pablo Ovalle",
+    specialty: "Médico Neurorradiólogo Diagnóstico / Neurorradiólogo",
+    experience: "Neurorradiología",
+    image: doc3
   },
   {
     id: 4,
-    name: "Dra. Paola Andrea Gómez",
-    specialty: "Radiología Intervencionista",
-    sub: "Procedimientos guiados",
-    exp: "11 años de experiencia",
-    tags: ["Biopsias", "Drenajes"],
-    image: img4,
+    name: "Dr. Jairo Leon Acevedo",
+    specialty: "Médico Internista / Especialista en Cardiología / Subespecialista en diagnóstico no invasivo",
+    experience: "Cardiología",
+    image: doc4,
+  },
+  {
+    id: 5,
+    name: "Dr. Alonso Gómez García",
+    specialty: "Médico Especialista en Pediatría y en Hemodinamia en Cardiopatías Congénitas",
+    experience: "Pediatría / Hemodinamia",
+    image: doc5,
   },
 ];
 
 function SpecialistsGrid() {
   return (
-    <section className="specialists-grid"  id="equipo">
+    <section className="specialists-grid" id="equipo">
       <div className="specialists-grid__container">
 
-        {/* HEADER */}
+        {/* HEADER CON TU FORMATO DE GRADIENTE SPAN DE CEDICAF */}
         <div className="specialists-grid__header">
           <h2 className="specialists-grid__title">
-            Conoce a Nuestros{" "}
-            <span className="text-gradient-blue">Especialistas</span>
+            Conoce a Nuestros <span>Especialistas</span>
           </h2>
 
           <p className="specialists-grid__description">
-            Médicos Cedicaf y especialistas altamente calificados,
-            comprometidos con la excelencia diagnóstica.
+            La experiencia y el conocimiento médico al servicio de tu salud. Nuestro equipo combina años de trayectoria clínica con la máxima vocación humana.
           </p>
         </div>
 
@@ -82,25 +68,17 @@ function SpecialistsGrid() {
                 <img src={doc.image} alt={doc.name} />
               </div>
 
-              {/* INFO */}
+              {/* INFO LIMPIA Y CONTROLADA */}
               <div className="specialist-card__info">
                 <h3 className="specialist-card__name">{doc.name}</h3>
 
                 <span className="specialist-card__specialty">
                   {doc.specialty}
                 </span>
-
-                <p className="specialist-card__sub">{doc.sub}</p>
-
-                <div className="specialist-card__exp">
-                  ⏱ {doc.exp}
-                </div>
-
-                {/* TAGS */}
+                
+                {/* TAG / ATRIBUTO DE EXPERIENCIA AL PIE DE LA TARJETA */}
                 <div className="specialist-card__tags">
-                  {doc.tags.map((tag, i) => (
-                    <span key={i}>{tag}</span>
-                  ))}
+                  <span>{doc.experience}</span>
                 </div>
               </div>
 

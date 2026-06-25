@@ -154,15 +154,15 @@ body {
 .allies-hero {
   position: relative;
   width: 100%;
-  min-height: 72vh;
-
+  height: calc(100vh - 120px);
+  min-height: 580px;
+  max-height: 720px;
   display: flex;
   align-items: center;
-
+  overflow: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 /* OVERLAY (Sincronizado con la suite de banners ligeros) */
@@ -171,12 +171,11 @@ body {
   inset: 0;
   z-index: 1;
 
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(255, 255, 255, 0.85) 38%,
-    rgba(255, 255, 255, 0.55) 70%,
-    rgba(255, 255, 255, 0.12) 100%
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0.85) 0%,   /* Un poco menos denso al inicio para que respire */
+      rgba(255, 255, 255, 0.65) 35%,  /* Baja más rápido para descubrir la imagen */
+      rgba(255, 255, 255, 0.30) 70%,  /* Súper traslúcido en el centro */
+      rgba(255, 255, 255, 0.05) 100%  /* Prácticamente invisible al final */
   );
 }
 
@@ -184,17 +183,21 @@ body {
 .allies-hero__container {
   position: relative;
   z-index: 2;
-
   width: 100%;
-  max-width: 1300px;
-  margin: auto;
-
-  padding: 120px 32px 60px; /* Aire superior para el Navbar y márgenes limpios */
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 30px 32px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* CONTENT */
 .allies-hero__content {
-  max-width: 780px;
+  max-width: 700px;
+  margin-left: 50px;
+  margin-bottom: 40px;
 }
 
 /* TITLE */

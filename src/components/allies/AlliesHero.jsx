@@ -1,7 +1,6 @@
-import heroBg from "../../assets/images/Fondo.jpg";
-import aliadosIcon from "../../assets/Iconos/email.png";
-import coberturaIcon from "../../assets/Iconos/email.png";
-import tramitesIcon from "../../assets/Iconos/email.png";
+import heroBg from "../../assets/images/Convenios.png";
+import aliadosIcon from "../../assets/Iconos/Convenio.png";
+import tramitesIcon from "../../assets/Iconos/Agil.png";
 
 function AlliesHero() {
   return (
@@ -22,7 +21,7 @@ function AlliesHero() {
           </h1>
 
           <p className="allies-hero__description">
-            ?? Texto
+            En Cedicaf ampliamos nuestras fronteras para facilitarte el acceso a una medicina diagnóstica de alta calidad. Gracias a nuestras alianzas estratégicas con destacadas entidades del sector, cuentas con una amplia cobertura y convenios diseñados para tu comodidad y bienestar.
           </p>
 
           {/* STATS */}
@@ -39,7 +38,7 @@ function AlliesHero() {
               <div className="allies-hero__text">
 
                 <span className="allies-hero__label">
-                  ?+ Aliados
+                  50 Aliados
                 </span>
 
                 <span className="allies-hero__desc">
@@ -50,27 +49,6 @@ function AlliesHero() {
 
             </div>
 
-            {/* CARD 2 */}
-            <div className="allies-hero__stat">
-
-              <img
-                src={coberturaIcon}
-                alt="Cobertura total"
-              />
-
-              <div className="allies-hero__text">
-
-                <span className="allies-hero__label">
-                  Cobertura Total
-                </span>
-
-                <span className="allies-hero__desc">
-                  Todas las modalidades
-                </span>
-
-              </div>
-
-            </div>
 
             {/* CARD 3 */}
             <div className="allies-hero__stat">

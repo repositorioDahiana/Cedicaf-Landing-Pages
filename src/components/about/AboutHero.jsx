@@ -1,4 +1,4 @@
-import historiaBg from "../../assets/images/Fondo.jpg";
+import historiaBg from "../../assets/images/QuienesSomos.png";
 
 import sedesIcon from "../../assets/Iconos/ubicacion.png";
 import isoIcon from "../../assets/Iconos/icontec.png";

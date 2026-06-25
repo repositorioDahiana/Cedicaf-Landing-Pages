@@ -5,6 +5,7 @@ import supersalud from "../../assets/Iconos/supersalud.png";
 import telefono from "../../assets/Iconos/telefono.png";
 import email from "../../assets/Iconos/email.png";
 import ubicacion from "../../assets/Iconos/Ubicacion.png";
+import google from "../../assets/Iconos/google.png";
 
 function Footer() {
   return (
@@ -20,10 +21,26 @@ function Footer() {
             alt="Logo Radiologos Asociados"
           />
 
-          <p>
-            Más de 32 años combinando alta tecnología y calidez humana. Especialistas en diagnósticos 
-            de alta complejidad con resultados precisos y oportunos.
-          </p>
+          <a
+            href="https://www.google.com/search?q=cedicaf+pereira&sca_esv=88d66a416da09828&biw=1536&bih=730&sxsrf=APpeQns0utqVunZEAfmMERvrWdyH2h-nTg%3A1782239573932&ei=VdE6apKrOOiLwbkPo-62yA4&gs_ssp=eJzj4tZP1zcsSY4vNkwxM2C0UjWosEg1trAwN04zNUtLNk82MLYyqLAwMTMwNDWytEizsLBIskjx4k9OTclMTkxTKEgtSs0sSgQAknET4g&oq=cedicaf+pereira&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2NlZGljYWYgcGVyZWlyYSoCCAAyCxAuGK8BGMcBGIAEMgUQABiABDIKEAAYgAQYigUYQzIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIaEC4YrwEYxwEYgAQYlwUY3AQY3gQY4ATYAQFIiBhQAFjjEXAAeAGQAQCYAcoEoAGzG6oBCzAuOS4yLjIuMS4xuAEDyAEA-AEBmAIPoAKWHMICChAjGMkCGPAFGCfCAgoQIxiABBiKBRgnwgIQEC4YgAQYigUYQxjHARivAcICExAuGIAEGIoFGEMYxwEYrwEYjgXCAhAQLhiABBiKBRhDGMcBGNEDwgINEAAYgAQYigUYQxixA8ICEBAjGMkCGPAFGIAEGIoFGCfCAhAQLhhDGK8BGMcBGIAEGIoFwgIKECMY8AUYyQIYJ8ICExAuGEMYrwEYxwEYsQMYgAQYigXCAggQABiABBixA8ICCxAAGIAEGLEDGIMBwgILEC4YgAQYxwEYrwHCAh8QLhhDGK8BGMcBGIAEGIoFGJcFGNwEGN4EGOAE2AEBmAMAugYGCAEQARgUkgcJMC45LjIuMi4yoAeUzAGyBwkwLjkuMi4yLjK4B5YcwgcGMi0xNC4xyAdOgAgB&sclient=gws-wiz-serp#lrd=0x8e38873f56fc7c03:0x846015298f888b8d,3,,,,"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="google-rating"
+          >
+            <img
+              src={google}
+              className="google-mini-logo"
+              alt="Google"
+            />
+
+            <div className="google-stars">
+              ★★★★★
+            </div>
+
+            <p className="google-text">
+              Califícanos en Google
+            </p>
+          </a>
         </div>
 
         {/* Servicios */}
@@ -36,8 +53,8 @@ function Footer() {
 
           <div className="footer-logos">
             {/* <img src={icontec} className="logo-icontec" alt="Icontec" />*/}
-            <img src={iqnet} className="logo-iqnet" alt="IQNET" />
-            <img src={supersalud} className="logo-supersalud" alt="Supersalud" />
+     {/*    <img src={iqnet} className="logo-iqnet" alt="IQNET" /> />*/}
+            <img src={supersalud} className="logo-supersalud" alt="Supersalud" /> 
           </div>
         </div>
 

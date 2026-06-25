@@ -1,4 +1,4 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import heroBg from "../../assets/images/Seguridad.png";
 import integralIcon from "../../assets/Iconos/email.png";
 import seguridadIcon from "../../assets/Iconos/email.png";
 

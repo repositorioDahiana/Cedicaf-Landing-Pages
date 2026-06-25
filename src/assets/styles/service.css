@@ -6,40 +6,47 @@
 
   /* Colores base */
   --color-white: #ffffff;
-  --color-text-dark: #1E2229;     /* Fondo Oscuro / Texto muy oscuro */
+  --color-text-dark: #1E2229;
+  /* Fondo Oscuro / Texto muy oscuro */
   --color-text-body: #4b5563;
-  --color-text-soft: #8A8A8F;     /* Gris Tecnológico */
+  --color-text-soft: #8A8A8F;
+  /* Gris Tecnológico */
   --color-text-hero: #1E2229;
-  --color-hero-title: #5C2121;    /* Borgoña Corporativo */
-  
+  --color-hero-title: #5C2121;
+  /* Borgoña Corporativo */
+
   /* Paleta Corporativa Cedicaf */
-  --color-brand-dark: #4a1a1a;    /* Borgoña Oscuro de contraste */
-  --color-brand-main: #5C2121;    /* Borgoña Corporativo Principal */
-  --color-brand-medium: #7d3232;  /* Borgoña Suave */
-  --color-brand-light: #8c4040;   /* Borgoña Claro */
-  --color-brand-soft: #9c5252;    /* Borgoña Pastel */
-  --color-brand-gray: #8A8A8F;    /* Gris Tecnológico */
-  --color-brand-hover: #7d3232;   /* Estado Hover para interacciones */
-  
+  --color-brand-dark: #4a1a1a;
+  /* Borgoña Oscuro de contraste */
+  --color-brand-main: #5C2121;
+  /* Borgoña Corporativo Principal */
+  --color-brand-medium: #7d3232;
+  /* Borgoña Suave */
+  --color-brand-light: #8c4040;
+  /* Borgoña Claro */
+  --color-brand-soft: #9c5252;
+  /* Borgoña Pastel */
+  --color-brand-gray: #8A8A8F;
+  /* Gris Tecnológico */
+  --color-brand-hover: #7d3232;
+  /* Estado Hover para interacciones */
+
   --color-border-light: #e5e7eb;
-  --color-border-soft: rgba(138, 138, 143, 0.15); /* Basado en Gris Tecnológico */
+  --color-border-soft: rgba(138, 138, 143, 0.15);
+  /* Basado en Gris Tecnológico */
 
   /* Gradientes Dinámicos y Suaves (Como los del botón de agendamiento) */
-  --gradient-title: linear-gradient(
-    90deg,
-    #5C2121 0%,
-    #7d3232 45%,
-    #ac5c5c 75%,
-    #b97a7a 100%
-  );
+  --gradient-title: linear-gradient(90deg,
+      #5C2121 0%,
+      #7d3232 45%,
+      #ac5c5c 75%,
+      #b97a7a 100%);
   --gradient-line: linear-gradient(90deg, #5C2121, #8A8A8F, #F8F9FA);
-  --gradient-button: linear-gradient(
-    135deg,
-    #5C2121 0%,
-    #7d3232 40%,
-    #9c5252 75%,
-    #b97a7a 100%
-  );
+  --gradient-button: linear-gradient(135deg,
+      #5C2121 0%,
+      #7d3232 40%,
+      #9c5252 75%,
+      #b97a7a 100%);
   --gradient-number: linear-gradient(90deg, #5C2121, #7d3232, #8A8A8F);
   --gradient-dot: linear-gradient(135deg, #5C2121, #8A8A8F);
 
@@ -48,7 +55,8 @@
   --bg-card: rgba(255, 255, 255, 0.88);
   --bg-card-soft: rgba(255, 255, 255, 0.92);
   --bg-btn-secondary: rgba(255, 255, 255, 0.75);
-  --bg-icon-brand: rgba(92, 33, 33, 0.08); /* Fondo sutil para iconos en Borgoña */
+  --bg-icon-brand: rgba(92, 33, 33, 0.08);
+  /* Fondo sutil para iconos en Borgoña */
 
   /* Sombras suavizadas acordes a la nueva paleta */
   --shadow-card: 0 12px 35px rgba(30, 34, 41, 0.04);
@@ -74,7 +82,8 @@
 /* ==================== GLOBAL ==================== */
 body {
   font-family: var(--font-body);
-  background-color: #F8F9FA; /* Blanco Clínico por defecto para toda la app */
+  background-color: #F8F9FA;
+  /* Blanco Clínico por defecto para toda la app */
   color: var(--color-text-dark);
 }
 
@@ -128,7 +137,7 @@ body {
   background-size: 300% 300%;
   box-shadow: var(--shadow-button);
   /* Mantiene vivo el movimiento sutil de colores */
-  animation: gradientMove 6s ease infinite; 
+  animation: gradientMove 6s ease infinite;
 }
 
 .btn-primary-brand:hover {
@@ -165,22 +174,22 @@ body {
 .services-hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(255, 255, 255, 0.85) 35%,
-    rgba(255, 255, 255, 0.55) 65%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.85) 35%,
+      rgba(255, 255, 255, 0.55) 65%,
+      rgba(255, 255, 255, 0.1) 100%);
   z-index: 1;
 }
 
 .services-hero__container {
   position: relative;
   z-index: 2;
-  max-width: 1300px; /* Sincronizado con Careers y Specialists Hero */
+  max-width: 1300px;
+  /* Sincronizado con Careers y Specialists Hero */
   margin: auto;
-  padding: 120px 32px 60px; /* Unificado para mantener la misma línea con el Navbar */
+  padding: 120px 32px 60px;
+  /* Unificado para mantener la misma línea con el Navbar */
   width: 100%;
 }
 
@@ -196,14 +205,17 @@ body {
   border-radius: var(--radius-full);
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--color-brand-main); /* Cambiado a tu nuevo azul principal */
-  background: rgba(10, 78, 163, 0.1); /* Opacidad azul unificada con el ecosistema */
+  color: var(--color-brand-main);
+  /* Cambiado a tu nuevo azul principal */
+  background: rgba(10, 78, 163, 0.1);
+  /* Opacidad azul unificada con el ecosistema */
   letter-spacing: 0.5px;
 }
 
 /* TITLE */
 .services-hero__title {
-  font-family: var(--font-title); /* Fuerza Poppins */
+  font-family: var(--font-title);
+  /* Fuerza Poppins */
   font-size: clamp(2.4rem, 5vw, 3.8rem);
   font-weight: 700;
   line-height: 1.1;
@@ -211,9 +223,32 @@ body {
   color: var(--color-hero-title);
 }
 
+/* TITLE */
+.services-hero__title {
+  font-family: var(--font-title);
+  /* Fuerza Poppins */
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 18px;
+  color: var(--color-hero-title);
+}
+
+/* 🌟 AÑADE ESTO: Aplica el degradado borgoña al texto envuelto en span */
+.services-hero__title span {
+  background: var(--gradient-title);
+  /* O si prefieres directo: linear-gradient(135deg, #5C2121 0%, #7d3232 100%) */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  /* Evita cortes extraños en saltos de línea */
+}
+
 /* TEXT */
 .services-hero__description {
-  font-family: var(--font-body); /* Fuerza Inter */
+  font-family: var(--font-body);
+  /* Fuerza Inter */
   font-size: 1rem;
   line-height: 1.7;
   color: var(--color-text-hero);
@@ -224,13 +259,15 @@ body {
 .services-hero__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px; /* Unificado con el ecosistema de grids de tu app */
+  gap: 20px;
+  /* Unificado con el ecosistema de grids de tu app */
 }
 
 /* MINI CARDS DE SERVICIOS */
 .services-card {
-  background: var(--bg-card); /* 255, 255, 255, 0.88 con opacidad premium */
-  border-radius: var(--radius-md); 
+  background: var(--bg-card);
+  /* 255, 255, 255, 0.88 con opacidad premium */
+  border-radius: var(--radius-md);
   border: 1px solid var(--color-border-soft);
   padding: 20px;
   box-shadow: var(--shadow-card);
@@ -240,7 +277,8 @@ body {
 .services-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-card-hover);
-  border-color: rgba(37, 99, 235, 0.2); /* Sincronizado con azul brillante */
+  border-color: rgba(37, 99, 235, 0.2);
+  /* Sincronizado con azul brillante */
 }
 
 .services-card h3 {
@@ -248,11 +286,13 @@ body {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 8px;
-  color: var(--color-text-dark); /* Color oscuro base para legibilidad */
+  color: var(--color-text-dark);
+  /* Color oscuro base para legibilidad */
 }
 
 .services-card:hover h3 {
-  color: var(--color-brand-main); /* Cambio dinámico a tu Azul Principal en Hover */
+  color: var(--color-brand-main);
+  /* Cambio dinámico a tu Azul Principal en Hover */
   transition: color 0.3s ease;
 }
 
@@ -268,13 +308,14 @@ body {
   position: absolute;
   top: 50%;
   z-index: 4;
-  background: transparent !important; 
+  background: transparent !important;
   border: none;
   box-shadow: none;
-  width: auto;    
+  width: auto;
   height: auto;
-  font-size: 2.5rem;  
-  color: var(--color-brand-main); /* Pasado a tu Azul Principal */
+  font-size: 2.5rem;
+  color: var(--color-brand-main);
+  /* Pasado a tu Azul Principal */
   cursor: pointer;
   transform: translateY(-50%);
   transition: var(--transition-fast);
@@ -282,8 +323,10 @@ body {
 
 /* Hover limpio hacia el azul de interacción */
 .nav-arrow:hover {
-  color: var(--color-blue-hover); /* Cambiado a tu token de hover azul */
-  transform: translateY(-50%) scale(1.1); /* Efecto de crecimiento sutil */
+  color: var(--color-blue-hover);
+  /* Cambiado a tu token de hover azul */
+  transform: translateY(-50%) scale(1.1);
+  /* Efecto de crecimiento sutil */
 }
 
 /* Posiciones */
@@ -320,18 +363,19 @@ body {
   .services-card {
     padding: 18px;
   }
-  
+
   /* Oculta las flechas en móviles para evitar que se pisen con el contenido */
   .nav-arrow {
     display: none;
   }
 }
 
-/* ==================== SERVICES HIGHLIGHT ==================== */
+/* ==================== SERVICES HIGHLIGHT (CEDICAF) ==================== */
 
 .services-highlight {
-  padding: 50px 20px 50px;
-  background: #F8F9FA; /* Fondo unificado de tu app */
+  padding: 80px 20px;
+  background: #ffffff;
+  /* Fondo blanco */
 }
 
 .services-highlight__container {
@@ -347,21 +391,33 @@ body {
   border-radius: var(--radius-full);
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--color-brand-main); /* Cambiado al nuevo Azul Principal */
-  background: rgba(10, 78, 163, 0.1); /* Fondo sutil azul unificado con el ecosistema */
+  color: #5C2121;
+  /* Cambiado a tu Borgoña */
+  background: rgba(92, 33, 33, 0.08);
+  /* Fondo sutil de la marca */
   margin-bottom: 12px;
 }
 
 .services-highlight__title {
-  font-family: var(--font-title); /* Sincronizado con Poppins */
+  font-family: var(--font-title);
+  /* Sincronizado con Poppins */
   font-size: clamp(2rem, 4vw, 2.6rem);
   font-weight: 700;
-  color: var(--color-hero-title);
+  color: var(--color-text-dark, #1e2229);
   margin-bottom: 14px;
 }
 
+/* Aplicación del degradado corporativo Borgoña en el span */
+.services-highlight__title span {
+  background: var(--gradient-title);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .services-highlight__description {
-  font-family: var(--font-body); /* Sincronizado con Inter */
+  font-family: var(--font-body);
+  /* Sincronizado con Inter */
   max-width: 650px;
   margin: 0 auto 50px;
   font-size: 0.95rem;
@@ -374,6 +430,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+  margin-bottom: 40px;
 }
 
 /* ==================== CARD BASE ==================== */
@@ -381,55 +438,58 @@ body {
 .service-card {
   padding: 28px 22px;
   border-radius: var(--radius-md);
-
-  background: #F8F9FA;
-  border: 1px solid var(--color-border-soft);
-
+  background: var(--color-white, #ffffff);
+  border: 1px solid var(--color-border-light, #e2e8f0);
   box-shadow: var(--shadow-card);
-
   text-align: left;
-
   transition: var(--transition-base);
-
   display: flex;
   gap: 14px;
   align-items: flex-start;
-
-  height: 100%; /* 🔥 importante */
+  height: 100%;
 }
 
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-card-hover);
+/* CARD CON VELO BORGOÑA SUAVE ALTERNO */
+
+.service-card--brand-soft {
+  background: linear-gradient(135deg,
+      rgba(92, 33, 33, 0.08) 0%,
+      rgba(125, 50, 50, 0.04) 100%);
+  border: 1px solid rgba(92, 33, 33, 0.14);
+  box-shadow: var(--shadow-card);
 }
 
-/* 🔵 CARD AZUL -> ADAPTADA A TU NUEVA PALETA AZUL PREMIUM CON OPACIDAD */
-.service-card--blue {
-  background: linear-gradient(
-    135deg,
-    rgba(10, 78, 163, 0.12),
-    rgba(37, 99, 235, 0.08)
-  );
-  border: 1px solid rgba(10, 78, 163, 0.15);
+/* El fondo del icono en la tarjeta clara destaca con un tono un poco más firme */
+.service-card--brand-soft .service-card__icon {
+  background: rgba(92, 33, 33, 0.12);
 }
 
-/* ICONO */
+/* Mantenemos los textos oscuros y legibles sobre el fondo claro */
+.service-card--brand-soft .service-card__content h3 {
+  color: var(--color-text-dark, #1e2229);
+}
+
+.service-card--brand-soft .service-card__content p {
+  color: var(--color-text-body, #4a5568);
+}
+
+/* ICONO: Removida la variable azul de fondo */
 .service-card__icon {
   width: 60px;
   height: 60px;
   border-radius: var(--radius-sm);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: var(--bg-icon-blue); /* Cambiado a tu variable de icono Azul */
+  background: rgba(92, 33, 33, 0.07);
+  /* Fondo sutil borgoña médico */
   flex-shrink: 0;
+  transition: background 0.3s ease;
 }
 
 .service-card__icon img {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
 }
 
@@ -459,10 +519,9 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 280px; /* 🔥 respeta tamaño */
-
+  min-height: 280px;
   transform-style: preserve-3d;
-  transition: transform 0.6s ease;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* EFECTO */
@@ -470,13 +529,9 @@ body {
   transform: rotateY(180deg);
 }
 
-/* CARAS (Mantenidas intactas para que la de atrás no se baje ni pierda su posición absoluta) */
 .service-card--front,
 .service-card--back {
-  position: absolute;
   width: 100%;
-  height: 100%;
-
   backface-visibility: hidden;
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -484,32 +539,41 @@ body {
 
 /* FRONT */
 .service-card--front {
+  position: relative;
+  height: 100%;
   z-index: 2;
 }
 
-/* BACK -> ADAPTADA AL DEGRADADO SUAVE AZUL DE LA NUEVA PALETA */
+/* BACK -> ADAPTADA AL DEGRADADO SUAVE BORGOÑA */
 .service-card--back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   transform: rotateY(180deg);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 15px;
-
-  background: linear-gradient(
-    135deg,
-    rgba(10, 78, 163, 0.08),
-    rgba(37, 99, 235, 0.05)
-  );
-  border: 1px solid var(--color-border-soft);
+  /* Degradado sutil borgoña institucional de Cedicaf */
+  background: linear-gradient(135deg,
+      rgba(92, 33, 33, 0.08) 0%,
+      rgba(125, 50, 50, 0.04) 100%);
+  border: 1px solid rgba(92, 33, 33, 0.12);
 }
 
-/* IMAGEN PERFECTA */
+/* IMAGEN CLÍNICA */
 .service-card--back img {
   max-width: 90%;
   max-height: 90%;
-  object-fit: contain; /* 🔥 NO corta */
+  object-fit: contain;
+}
+
+/* BOTÓN INFERIOR ACCIONES SCONTRADO CON EL ECOSISTEMA DE CONVENIOS */
+.services-highlight__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 /* ==================== RESPONSIVE ==================== */
@@ -526,10 +590,10 @@ body {
   }
 }
 
-/* ==================== SPECIALTIES ==================== */
+/* ==================== SPECIALTIES (CEDICAF) ==================== */
 
 .specialties {
-  padding: 80px 20px; /* Unificado con el padding estándar de las secciones de tu app */
+  padding: 80px 20px;
   background: #F8F9FA; /* Fondo gris tecnológico sutil y limpio */
 }
 
@@ -548,8 +612,16 @@ body {
   font-family: var(--font-title); /* Fuerza Poppins */
   font-size: clamp(2rem, 4vw, 2.6rem);
   font-weight: 700;
-  color: var(--color-hero-title);
+  color: var(--color-hero-title, #1e2229);
   margin-bottom: 14px;
+}
+
+/* Aplicación del degradado borgoña de tu marca en el span */
+.specialties__title span {
+  background: var(--gradient-title);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .specialties__description {
@@ -565,14 +637,14 @@ body {
 .specialties__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px; /* Unificado con vacancies, benefits y specialists-grid */
+  gap: 25px;
 }
 
-/* CARD ESPECIALIDAD */
+/* CARD ESPECIALIDAD (BASE BLANCA) */
 .specialty-card {
-  background: #F8F9FA;
+  background: var(--color-white, #ffffff);
   border-radius: var(--radius-md);
-  padding: 24px 20px; /* Ajuste fino de padding interno para mejor aire */
+  padding: 28px 20px;
   border: 1px solid var(--color-border-soft);
   box-shadow: var(--shadow-card);
   text-align: center;
@@ -585,16 +657,16 @@ body {
 .specialty-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-card-hover);
-  border-color: rgba(37, 99, 235, 0.2); /* Sincronizado con azul brillante */
+  border-color: rgba(92, 33, 33, 0.15); /* Toque borgoña en hover */
 }
 
-/* CONTENEDOR ICONO ADAPTADO */
+/* CONTENEDOR ICONO ADAPTADO A LA MARCA */
 .specialty-card__icon {
   width: 60px;
   height: 60px;
   margin: 0 auto 16px;
   border-radius: var(--radius-full);
-  background: var(--bg-icon-blue); /* Fondo sutil unificado en tu nuevo azul */
+  background: rgba(92, 33, 33, 0.06); /* Fondo sutil borgoña claro */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -602,71 +674,62 @@ body {
 }
 
 .specialty-card:hover .specialty-card__icon {
-  background: rgba(37, 99, 235, 0.18); /* Encendido dinámico azul en Hover */
+  background: rgba(92, 33, 33, 0.12); /* Encendido dinámico del fondo */
   transform: scale(1.05);
 }
 
 .specialty-card__icon img {
-  width: 38px; /* Ajuste sutil para que respire limpio dentro del círculo */
-  height: 38px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
 }
 
 /* TEXTOS INTERNOS */
 .specialty-card h3 {
-  font-family: var(--font-title); /* Fuerza Poppins para consistencia de marca */
-  font-size: 1rem;
+  font-family: var(--font-title); /* Fuerza Poppins */
+  font-size: 1.05rem;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: var(--color-text-dark);
   transition: color 0.3s ease;
 }
 
-/* El título de la especialidad se enciende en tu Azul Principal al pasar el mouse */
+/* El título de la especialidad se enciende en tu Borgoña Principal al hacer hover */
 .specialty-card:hover h3 {
-  color: var(--color-brand-main);
+  color: #5C2121;
 }
 
 .specialty-card p {
-  font-size: 0.85rem; /* Subido ligeramente para mejorar legibilidad clínica */
+  font-size: 0.85rem;
   color: var(--color-text-body);
-  line-height: 1.5;
+  line-height: 1.55;
   margin: 0;
 }
+
+/* ==================== TARJETAS INTERCALADAS (TU LÓGICA DE VELOS) ==================== */
+/* Aplica el fondo borgoña claro transparente a las tarjetas pares del grid para dinamismo */
+.specialty-card:nth-child(even) {
+  background-color: rgba(92, 33, 33, 0.04) !important;
+  border-color: rgba(92, 33, 33, 0.07);
+}
+
+.specialty-card:nth-child(odd) {
+  background-color: var(--color-white, #ffffff) !important;
+}
+
 
 /* ==================== RESPONSIVE ==================== */
 
 @media (max-width: 1024px) {
   .specialties__grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 }
 
-@media (max-width: 768px) {
-  .specialties {
-    padding: 60px 20px;
-  }
-
-  .specialties__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .specialties__grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-}
-
-/* Tarjetas alternadas - Color Borgoño claro y Blanco/F8F9FA */
-[class$="__card"]:nth-child(even),
-.card:nth-child(even) {
-  background-color: rgba(92, 33, 33, 0.05) !important;
-}
-[class$="__card"]:nth-child(odd),
-.card:nth-child(odd) {
-  background-color: #F8F9FA !important;
 }

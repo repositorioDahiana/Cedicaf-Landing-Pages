@@ -1,6 +1,6 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import heroBg from "../../assets/images/DerDeb.png";
 import derechosIcon from "../../assets/Iconos/email.png";
-import deberesIcon from "../../assets/Iconos/email.png";
+import deberesIcon from "../../assets/Iconos/Deberes.png";
 
 function PatientRightsHero() {
   return (

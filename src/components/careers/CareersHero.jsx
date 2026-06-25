@@ -1,4 +1,4 @@
-import heroBg from "../../assets/images/Fondo.jpg";
+import heroBg from "../../assets/images/Trabajo.png";
 
 // 🔥 ICONOS
 import vacantesIcon from "../../assets/Iconos/email.png";

@@ -1,38 +1,38 @@
 import { useState, useEffect } from "react";
 
-import img1 from "../../assets/images/Fondo.jpg";
-import img2 from "../../assets/images/Fondo.jpg";
-import img3 from "../../assets/images/Fondo.jpg";
+import img1 from "../../assets/images/Servicio1.png";
+import img2 from "../../assets/images/Ferrari5.png";
+import img3 from "../../assets/images/Servicio3.png";
 
 const slides = [
   {
     title: (
       <>
-        Titulo
+        El más alto estándar en <span>ayuda diagnóstica integral</span>
       </>
     ),
     description:
-      "Texto",
+      "Descubre un portafolio de servicios médicos diseñado para darte respuestas exactas cuando más las necesitas. Con equipos de última generación en Resonancia Magnética, Medicina Nuclear, Tomografía y un laboratorio clínico de alta confianza, respaldamos tu bienestar con la precisión que los profesionales de la salud exigen.",
     image: img1,
   },
   {
     title: (
       <>
-        Titulo
+        Equipamiento de vanguardia para <span>resultados impecables</span>
       </>
     ),
     description:
-      "Texto",
+      "Tu salud no da esperas. En Cedicaf integramos en un solo lugar tecnología médica avanzada en imágenes, Medicina Nuclear, Cardiología y Laboratorio Clínico. Vivirás una experiencia de atención ágil y segura, respaldada por especialistas comprometidos en transformar la tecnología en bienestar para tu vida.",
     image: img2,
   },
   {
     title: (
       <>
-        Titulo
+        Todo el soporte médico avanzado <span>en un solo lugar</span>
       </>
     ),
     description:
-      "Texto",
+      "Desde una rutina de Laboratorio Clínico y monitoreo de Cardiología, hasta estudios de alta complejidad en Resonancia Magnética y Medicina Nuclear. En Cedicaf combinamos infraestructura digital de punta con la calidez humana que mereces, garantizando el camino más claro hacia tu recuperación.",
     image: img3,
   },
 ];
@@ -49,7 +49,7 @@ function ServicesHero() {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 7000);
+    const interval = setInterval(nextSlide, 10000);
     return () => clearInterval(interval);
   }, []);
 

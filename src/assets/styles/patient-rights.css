@@ -154,27 +154,26 @@ body {
 .patient-hero {
   position: relative;
   width: 100%;
-  min-height: 70vh;
-
+  height: calc(100vh - 120px);
+  min-height: 580px;
+  max-height: 720px;
   display: flex;
   align-items: center;
-
+  overflow: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 /* OVERLAY ELEGANTE */
 .patient-hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(255, 255, 255, 0.85) 35%,
-    rgba(255, 255, 255, 0.55) 65%,
-    rgba(255, 255, 255, 0.1) 100%
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0.85) 0%,   /* Un poco menos denso al inicio para que respire */
+      rgba(255, 255, 255, 0.65) 35%,  /* Baja más rápido para descubrir la imagen */
+      rgba(255, 255, 255, 0.30) 70%,  /* Súper traslúcido en el centro */
+      rgba(255, 255, 255, 0.05) 100%  /* Prácticamente invisible al final */
   );
   z-index: 1;
 }
@@ -183,17 +182,21 @@ body {
 .patient-hero__container {
   position: relative;
   z-index: 2;
-
   width: 100%;
-  max-width: 1300px;
-  margin: auto;
-
-  padding: 120px 32px 60px; /* Sincronizado para evitar saltos visuales con el Navbar */
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 30px 32px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* CONTENT */
 .patient-hero__content {
-  max-width: 600px;
+  max-width: 700px;
+  margin-left: 50px;
+  margin-bottom: 40px;
 }
 
 /* TITLE */

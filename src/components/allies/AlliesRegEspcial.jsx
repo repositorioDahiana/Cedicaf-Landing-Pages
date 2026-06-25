@@ -1,32 +1,21 @@
-import heroBg from "../../assets/images/Fondo.jpg";
-import medicinaIcon from "../../assets/Iconos/email.png";
+import heroBg from "../../assets/images/Aliados4.png";
+import medicinaIcon from "../../assets/Iconos/Aliados4.png";
 
-import Icono1 from "../../assets/Iconos/email.png";
-import Icono2 from "../../assets/Iconos/email.png";
-import Icono3 from "../../assets/Iconos/email.png";
-import Icono4 from "../../assets/Iconos/email.png";
+import logo18 from "../../assets/images/LogoSanitas.png";
+import logo19 from "../../assets/images/LogoSOS.png";
+import logo20 from "../../assets/images/LogoEmisanar.png";
+import logo21 from "../../assets/images/LogoPolicia.png";
+import logo22 from "../../assets/images/LogoCasur.png";
+import logo23 from "../../assets/images/LogoMaisfen.png";
 
 
 const allies = [
-  {
-    icon: Icono1,
-    name: "Texto",
-  },
-
-  {
-    icon: Icono2,
-    name: "Texto",
-  },
-
-  {
-    icon: Icono3,
-    name: "Texto",
-  },
-
-  {
-    icon: Icono4,
-    name: "Texto",
-  },
+  { name: "Entidad Promotora De Salud Sanitas S.A.S", icon: logo18 },
+  { name: "Servicio Occidental De Salud S.O.S.", icon: logo19 },
+  { name: "Emssanar S.A.S", icon: logo20 },
+  { name: "Regional De Aseguramiento En Salud N°4", icon: logo21 },
+  { name: "Caja De Sueldos De Retiro De La Policia Nacional", icon: logo22 },
+  { name: "Union Temporal Salud Integral Maisfen", icon: logo23 },
 
 ];
 
@@ -62,7 +51,7 @@ function AlliesRegEspcial() {
               </h2>
 
               <p className="allies-prepaid__subtitle">
-                ? entidades aliadas
+                6 entidades aliadas
               </p>
 
             </div>

@@ -149,7 +149,7 @@ function Hero() {
               className="hero__statIcon"
             />
             <div className="hero__statText">
-              <div className="hero__statNumber">500K+</div>
+              <div className="hero__statNumber">400K+</div>
               <div className="hero__statLabel">Pacientes</div>
             </div>
           </div>

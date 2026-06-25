@@ -56,7 +56,7 @@ function AboutSummary() {
     {
       id: 3,
       icon: pacientesIcon,
-      end: 500,
+      end: 400,
       suffix: "K+",
       label: "Pacientes Atendidos",
       iconClass: "about-summary__icon-box--blue",
@@ -64,7 +64,7 @@ function AboutSummary() {
     {
       id: 4,
       icon: especialidadesIcon,
-      end: 0,
+      end: 4,
       suffix: "+",
       label: "Especialidades Médicas",
       iconClass: "about-summary__icon-box--blue",
@@ -76,7 +76,7 @@ function AboutSummary() {
       <div className="about-summary__container">
         <div className="about-summary__header">
           <h2 className="about-summary__title">
-            El lado humano de <span>la alta tecnología</span>
+            ¿Por Qué <span>Elegirnos?</span>
           </h2>
 
           <p className="about-summary__description">
@@ -111,7 +111,7 @@ function AboutSummary() {
         <div className="about-summary__highlight">
           <span className="about-summary__dot"></span>
           <p>
-            Más de <strong>500,000 pacientes</strong> han confiado en nosotros
+            Más de <strong>400,000 pacientes</strong> han confiado en nosotros
             para su diagnóstico médico.
           </p>
         </div>

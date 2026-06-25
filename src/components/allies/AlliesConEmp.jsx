@@ -1,33 +1,23 @@
-import heroBg from "../../assets/images/Fondo.jpg";
-import medicinaIcon from "../../assets/Iconos/email.png";
+import heroBg from "../../assets/images/Aliados3.png";
+import medicinaIcon from "../../assets/Iconos/Aliados3.png";
 
-import Icono1 from "../../assets/Iconos/email.png";
-import Icono2 from "../../assets/Iconos/email.png";
-import Icono3 from "../../assets/Iconos/email.png";
-import Icono4 from "../../assets/Iconos/email.png";
-
+import logo11 from "../../assets/images/LogoNestle.png";
+import logo12 from "../../assets/images/LogoColmena.png";
+import logo13 from "../../assets/images/LogoPreviser.png";
+import logo14 from "../../assets/images/LogoSentir.png";
+import logo15 from "../../assets/images/LogoHemato.png";
+import logo16 from "../../assets/images/LogoOpositiva.png";
+import logo17 from "../../assets/images/LogoSisa.png";
 
 
 const allies = [
-  {
-    icon: Icono1,
-    name: "Texto",
-  },
-
-  {
-    icon: Icono2,
-    name: "Texto",
-  },
-
-  {
-    icon: Icono3,
-    name: "Texto",
-  },
-
-  {
-    icon: Icono4,
-    name: "Texto",
-  },
+  { name: "Nestle De Colombia S.A", icon: logo11 },
+  { name: "Colmena Riesgos Laborales ARL", icon: logo12 },
+  { name: "Previser", icon: logo13 },
+  { name: "Grupo Sentir S.A.S.", icon: logo14 },
+  { name: "Hemato Oncologos S.A", icon: logo15 },
+  { name: "Positiva Salud Integral Tulua S.A.S", icon: logo16 },
+  { name: "SISA Soluciones Integrales En Salud SAS", icon: logo17 },
 
 ];
 
@@ -63,7 +53,7 @@ function AlliesConEmp() {
               </h2>
 
               <p className="allies-prepaid__subtitle">
-                ? entidades aliadas
+                6 entidades aliadas
               </p>
 
             </div>

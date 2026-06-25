@@ -153,13 +153,15 @@ body {
 .specialists-hero {
   position: relative;
   width: 100%;
-  min-height: 70vh;
+  height: calc(100vh - 120px);
+  min-height: 580px;
+  max-height: 720px;
   display: flex;
   align-items: center;
+  overflow: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 /* Overlay elegante unificado con la nueva paleta */
@@ -178,16 +180,22 @@ body {
 
 /* Contenedor con alineación limpia - Consistente con Careers Hero */
 .specialists-hero__container {
-  position: relative;
+ position: relative;
   z-index: 2;
-  max-width: 1300px; 
-  margin: 0 auto;
-  padding: 120px 32px 60px; /* Espaciado superior para el Navbar fijo */
   width: 100%;
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 30px 32px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .specialists-hero__content {
-  max-width: 600px;
+  max-width: 700px;
+  margin-left: 50px;
+  margin-bottom: 40px;
 }
 
 /* Título con la tipografía corporativa 'Poppins' y el color de la nueva paleta */
@@ -245,12 +253,11 @@ body {
     min-width: 100% !important;
   }
 }
-
-/* ==================== SPECIALISTS GRID ==================== */
+/* ==================== SPECIALISTS GRID (CEDICAF) ==================== */
 
 .specialists-grid {
   padding: 80px 20px;
-  background: var(--bg-card-soft); /* Unificado con el fondo de Vacancies y Benefits (Gris tecnológico sutil) */
+  background: var(--bg-card-soft, #f8f9fa); /* Sincronizado con el fondo limpio de tu ecosistema */
 }
 
 .specialists-grid__container {
@@ -261,20 +268,7 @@ body {
 /* HEADER */
 .specialists-grid__header {
   text-align: center;
-  margin-bottom: 50px; /* Unificado con vacancies */
-}
-
-/* INSIGNIA: Sincronizada con .vacancies__badge y .apply__badge (Nueva Paleta Azul) */
-.specialists-grid__badge {
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: var(--radius-full);
-  background: rgba(10, 78, 163, 0.1); /* Sincronizado con opacidad azul */
-  color: var(--color-blue-main); /* Cambiado a tu nuevo azul principal corporativo */
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin-bottom: 12px;
-  letter-spacing: 0.5px;
+  margin-bottom: 50px;
 }
 
 .specialists-grid__title {
@@ -282,11 +276,19 @@ body {
   font-size: clamp(2rem, 4vw, 2.6rem);
   font-weight: 700;
   margin-bottom: 14px;
-  color: var(--color-hero-title);
+  color: var(--color-text-dark, #1e2229);
+}
+
+/* Integración del degradado borgoña de Cedicaf en el texto span */
+.specialists-grid__title span {
+  background: var(--gradient-title);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .specialists-grid__description {
-  font-family: var(--font-body);
+  font-family: var(--font-body); /* Fuerza Inter */
   color: var(--color-text-body);
   max-width: 650px;
   margin: auto;
@@ -297,13 +299,13 @@ body {
 /* GRID PREMIUM */
 .specialists-grid__content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Estructura base limpia de 4 columnas para desktop */
-  gap: 25px; /* Unificado con el gap de benefits */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
 }
 
 /* CARD ESPECIALISTA */
 .specialist-card {
-  background: var(--color-white);
+  background: var(--color-white, #ffffff);
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--color-border-soft);
@@ -316,85 +318,74 @@ body {
 .specialist-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-card-hover);
-  border-color: rgba(37, 99, 235, 0.2); /* Hover sincronizado con azul brillante */
+  border-color: rgba(92, 33, 33, 0.15); /* Sutil contorno borgoña corporativo */
 }
 
 /* CONTENEDOR DE IMAGEN */
 .specialist-card__image {
   width: 100%;
-  height: 240px; /* Un poco más de presencia para fotos médicas profesionales */
+  height: 250px; /* Consistencia premium para fotografía clínica */
   overflow: hidden;
-  background-color: var(--color-border-light); /* Fondo de carga sutil unificado */
+  background-color: var(--color-border-light);
 }
 
 .specialist-card__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  object-position: top center;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .specialist-card:hover .specialist-card__image img {
-  transform: scale(1.04); /* Efecto zoom premium muy sutil */
+  transform: scale(1.04); /* Zoom premium muy sutil */
 }
 
 /* INFO */
 .specialist-card__info {
-  padding: 24px 20px; /* Espaciado más aireado y elegante */
+  padding: 24px 20px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
 .specialist-card__name {
-  font-family: var(--font-title); /* Fuerza Poppins en los nombres médicos */
+  font-family: var(--font-title); /* Fuerza Poppins */
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-text-dark);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  line-height: 1.3;
 }
 
-/* Especialidad médica en el nuevo Azul Corporativo Destacado */
+/* Especialidad médica destacada en tu Borgoña Principal */
 .specialist-card__specialty {
-  color: var(--color-blue-main); 
+  color: #5C2121; 
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  margin-bottom: 4px;
-}
-
-.specialist-card__sub {
-  font-size: 0.85rem;
-  color: var(--color-text-soft); /* Gris intermedio tecnológico */
-  margin-bottom: 8px;
-}
-
-/* Experiencia / Registro */
-.specialist-card__exp {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--color-text-body);
+  line-height: 1.4;
   margin-bottom: 16px;
-  margin-top: auto; /* Empuja las etiquetas siempre al fondo si los textos varían */
 }
 
-/* TAGS / ATRIBUTOS DEL MÉDICO */
+/* ATRIBUTO / BADGE INTERNO DE EXPERIENCIA */
 .specialist-card__tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   padding-top: 12px;
-  border-top: 1px solid var(--color-border-soft); /* Separador sutil */
+  border-top: 1px solid var(--color-border-soft); /* Línea de división sutil */
+  margin-top: auto; /* Empuja el badge siempre al final de la tarjeta */
 }
 
 .specialist-card__tags span {
   font-size: 0.75rem;
-  font-weight: 600;
-  padding: 4px 10px;
+  font-weight: 700;
+  padding: 4px 12px;
   border-radius: var(--radius-full);
-  background: var(--bg-icon-blue); /* Fondo sutil azul (rgba(37, 99, 235, 0.12)) */
-  color: var(--color-blue-bright); /* Texto en azul brillante para contraste */
+  background: rgba(92, 33, 33, 0.06); /* Fondo sutil borgoña claro traslúcido */
+  color: #5C2121; /* Texto borgoña para máxima armonía */
 }
 
 /* ==================== RESPONSIVE ==================== */
@@ -416,7 +407,7 @@ body {
   }
 
   .specialist-card__image {
-    height: 200px;
+    height: 220px;
   }
   
   .specialist-card__info {
@@ -431,6 +422,6 @@ body {
   }
 
   .specialist-card__image {
-    height: 250px; /* Recupera buena proporción en layout de una sola columna */
+    height: 260px;
   }
 }
