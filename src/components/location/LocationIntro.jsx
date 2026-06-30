@@ -59,7 +59,7 @@ function LocationsPreview() {
     {
       id: 4,
       city: "Ibague",
-      image: ubi5,
+      image: ubi4,
       title: "Cedicaf Sede Ibagué Resonancia",
       address: "Calle 18 No 7-102 Barrio Interlaken",
       schedule1: "L-V: 8:00 a.m. – 7:00 p.m.",

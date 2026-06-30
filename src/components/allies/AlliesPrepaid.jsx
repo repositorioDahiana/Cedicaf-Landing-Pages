@@ -1,4 +1,3 @@
-import heroBg from "../../assets/images/Aliados1.png";
 import medicinaIcon from "../../assets/Iconos/Aliados1.png";
 
 // ICONOS CARDS
@@ -26,10 +25,7 @@ function AlliesPrepaid() {
       <div className="allies-prepaid__container">
 
         {/* HEADER */}
-        <div
-          className="allies-prepaid__header"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
+        <div className="allies-prepaid__header">
 
           <div className="allies-prepaid__overlay"></div>
 

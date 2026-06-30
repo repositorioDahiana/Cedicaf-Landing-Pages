@@ -6,26 +6,40 @@ import sedesIcon from "../../assets/Iconos/Ubicacion.png";
 import pacientesIcon from "../../assets/Iconos/paciente.png";
 import especialidadesIcon from "../../assets/Iconos/ResonanciaPaciente.png";
 
-function Counter({ end, suffix = "", duration = 2000 }) {
-  const [count, setCount] = useState(0);
+function Counter({ start = 0, end, suffix = "", duration = 2000, infinite = false }) {
+  const [count, setCount] = useState(start);
 
   useEffect(() => {
-    let start = 0;
-    const increment = end / (duration / 16);
+    if (infinite) {
+      const timer = setInterval(() => {
+        setCount((prevCount) => {
+          if (prevCount >= end) {
+            return start; 
+          }
+          return prevCount + 1; 
+        });
+      }, 1000); 
 
-    const timer = setInterval(() => {
-      start += increment;
+      return () => clearInterval(timer);
+    } else {
+      let currentStart = start;
+      const totalRange = end - start;
+      const increment = totalRange / (duration / 16);
 
-      if (start >= end) {
-        setCount(end);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(start));
-      }
-    }, 16);
+      const timer = setInterval(() => {
+        currentStart += increment;
 
-    return () => clearInterval(timer);
-  }, [end, duration]);
+        if (currentStart >= end) {
+          setCount(end);
+          clearInterval(timer);
+        } else {
+          setCount(Math.floor(currentStart));
+        }
+      }, 16);
+
+      return () => clearInterval(timer);
+    }
+  }, [start, end, duration, infinite]);
 
   return (
     <span>
@@ -36,38 +50,49 @@ function Counter({ end, suffix = "", duration = 2000 }) {
 }
 
 function AboutSummary() {
+  const currentYear = new Date().getFullYear();
+  const calculatedYears = currentYear - 1994;
+
   const stats = [
     {
       id: 1,
       icon: experienciaIcon,
-      end: 32,
+      start: 0,
+      end: calculatedYears,
       suffix: "+",
       label: "Años de Experiencia",
       iconClass: "about-summary__icon-box--blue",
+      infinite: false,
     },
     {
       id: 2,
       icon: sedesIcon,
+      start: 0,
       end: 5,
       suffix: "+",
       label: "Sedes en Colombia",
       iconClass: "about-summary__icon-box--blue",
+      infinite: false,
     },
     {
       id: 3,
       icon: pacientesIcon,
-      end: 400,
+      start: 350, 
+      end: 401,  
       suffix: "K+",
       label: "Pacientes Atendidos",
       iconClass: "about-summary__icon-box--blue",
+      infinite: true, 
     },
     {
       id: 4,
       icon: especialidadesIcon,
+      start: 0,
       end: 4,
       suffix: "+",
       label: "Especialidades Médicas",
       iconClass: "about-summary__icon-box--blue",
+      infinite: false,
     },
   ];
 
@@ -80,8 +105,8 @@ function AboutSummary() {
           </h2>
 
           <p className="about-summary__description">
-            Con más de 32 años de experiencia, somos el centro líder en diagnósticos de alta 
-            complejidad en el Eje Cafetero, garantizando la precisión que tú y tu médico necesitan.
+            Con más de {calculatedYears} años de experiencia, somos el centro líder en diagnósticos de alta 
+            complejidad en la región, garantizando la precisión que tú y tu médico necesitan.
           </p>
 
           <div className="about-summary__line"></div>
@@ -100,7 +125,12 @@ function AboutSummary() {
 
               <div className="about-summary__card-content">
                 <h3 className="about-summary__number">
-                  <Counter end={item.end} suffix={item.suffix} />
+                  <Counter 
+                    start={item.start} 
+                    end={item.end} 
+                    suffix={item.suffix} 
+                    infinite={item.infinite}
+                  />
                 </h3>
                 <p className="about-summary__label">{item.label}</p>
               </div>

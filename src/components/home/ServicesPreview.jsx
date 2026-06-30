@@ -9,12 +9,12 @@ import ferrari5 from "../../assets/Iconos/Ferrari5.png";
 import ferrari6 from "../../assets/Iconos/Ferrari6.png";
 import ferrari7 from "../../assets/Iconos/Ferrari7.png";
 
-import img1 from "../../assets/images/Ferrari1.jpg"; 
+import img1 from "../../assets/images/Ferrari1.png"; 
 import img2 from "../../assets/images/Ferrari2.png";
 import img3 from "../../assets/images/Ferrari3.png";
 import img4 from "../../assets/images/Ferrari4.png";
-import img5 from "../../assets/images/Ferrari6.png";
-import img6 from "../../assets/images/Servicio2.jpeg";
+import img5 from "../../assets/images/Ferrari5.png";
+import img6 from "../../assets/images/Ferrari6.png";
 import img7 from "../../assets/images/Ferrari7.png";
 
 function ServicesPreview() {

@@ -11,7 +11,7 @@ function LocationsHero() {
       className="locations-hero"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
-      {/* OVERLAY */}
+
       <div className="locations-hero__overlay"></div>
 
       <div className="locations-hero__container">

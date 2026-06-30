@@ -3,6 +3,7 @@ import doc2 from "../../assets/images/Doctor2.png";
 import doc3 from "../../assets/images/Doctor3.png";
 import doc4 from "../../assets/images/Doctor4.jpeg";
 import doc5 from "../../assets/images/Doctor5.jpeg";
+import doc6 from "../../assets/images/Doctor6.png";
 
 const specialists = [
   {
@@ -40,6 +41,13 @@ const specialists = [
     experience: "Pediatría / Hemodinamia",
     image: doc5,
   },
+  {
+      id: 6,
+      name: "Dr. Luis Fernando Grisales",
+      specialty: "Médico Radiólogo / Director Científico Fellow Resonancia de Prostata",
+      experience: "Radiólogo",
+      image: doc6,
+    },
 ];
 
 function SpecialistsGrid() {

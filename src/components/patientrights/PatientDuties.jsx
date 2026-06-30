@@ -1,4 +1,4 @@
-import duty1 from "../../assets/Iconos/email.png";
+import duty1 from "../../assets/Iconos/Deber1.png";
 import duty2 from "../../assets/Iconos/email.png";
 import duty3 from "../../assets/Iconos/email.png";
 import duty4 from "../../assets/Iconos/email.png";

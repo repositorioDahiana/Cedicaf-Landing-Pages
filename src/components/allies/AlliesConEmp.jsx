@@ -1,4 +1,3 @@
-import heroBg from "../../assets/images/Aliados3.png";
 import medicinaIcon from "../../assets/Iconos/Aliados3.png";
 
 import logo11 from "../../assets/images/LogoNestle.png";
@@ -28,10 +27,7 @@ function AlliesConEmp() {
       <div className="allies-prepaid__container">
 
         {/* HEADER */}
-        <div
-          className="allies-prepaid__header"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
+        <div className="allies-prepaid__header">
 
           <div className="allies-prepaid__overlay"></div>
 
@@ -53,7 +49,7 @@ function AlliesConEmp() {
               </h2>
 
               <p className="allies-prepaid__subtitle">
-                6 entidades aliadas
+                7 entidades aliadas
               </p>
 
             </div>

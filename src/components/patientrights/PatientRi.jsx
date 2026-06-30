@@ -1,18 +1,18 @@
 // ICONOS
-import icon1 from "../../assets/Iconos/email.png";
-import icon2 from "../../assets/Iconos/email.png";
-import icon3 from "../../assets/Iconos/email.png";
-import icon4 from "../../assets/Iconos/email.png";
-import icon5 from "../../assets/Iconos/email.png";
-import icon6 from "../../assets/Iconos/email.png";
-import icon7 from "../../assets/Iconos/email.png";
-import icon8 from "../../assets/Iconos/email.png";
-import icon9 from "../../assets/Iconos/email.png";
-import icon10 from "../../assets/Iconos/email.png";
-import icon11 from "../../assets/Iconos/email.png";
-import icon12 from "../../assets/Iconos/email.png";
-import icon13 from "../../assets/Iconos/email.png";
-import icon14 from "../../assets/Iconos/email.png";
+import icon1 from "../../assets/Iconos/Derecho1.png";
+import icon2 from "../../assets/Iconos/Derecho2.png";
+import icon3 from "../../assets/Iconos/Derecho3.png";
+import icon4 from "../../assets/Iconos/Derecho4.png";
+import icon5 from "../../assets/Iconos/Derecho5.png";
+import icon6 from "../../assets/Iconos/Derecho6.png";
+import icon7 from "../../assets/Iconos/Derecho7.png";
+import icon8 from "../../assets/Iconos/Derecho8.png";
+import icon9 from "../../assets/Iconos/Derecho9.png";
+import icon10 from "../../assets/Iconos/Derecho10.png";
+import icon11 from "../../assets/Iconos/Derecho11.png";
+import icon12 from "../../assets/Iconos/Derecho12.png";
+import icon13 from "../../assets/Iconos/Derecho13.png";
+import icon14 from "../../assets/Iconos/Derecho14.png";
 
 const rights = [
   {

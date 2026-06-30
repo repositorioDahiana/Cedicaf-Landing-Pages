@@ -230,23 +230,22 @@ body {
 .patient-hero__stat {
   display: flex;
   align-items: center;
-  gap: 14px;
-
-  padding: 16px 20px;
-  border-radius: var(--radius-md); 
-
-  background: var(--bg-card); /* 255, 255, 255, 0.88 con opacidad premium */
-  border: 1px solid var(--color-border-soft);
-
+  gap: 10px;
+  width: 260px;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  background: rgba(92, 33, 33, 0.18); 
+  border: 1px solid rgba(92, 33, 33, 0.35); 
+  backdrop-filter: blur(6px); 
   box-shadow: var(--shadow-card);
-
   transition: var(--transition-base);
 }
 
 .patient-hero__stat:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   box-shadow: var(--shadow-card-hover);
-  border-color: rgba(37, 99, 235, 0.2); /* Sincronizado con tu nuevo azul brillante */
+  background: rgba(92, 33, 33, 0.28); 
+  border-color: rgba(92, 33, 33, 0.60);
 }
 
 /* ICON */
@@ -288,8 +287,10 @@ body {
 
 /* DESCRIPCIÓN */
 .patient-hero__desc {
-  font-size: 0.8rem;
-  color: var(--color-text-soft); /* Gris tecnológico intermedio */
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: rgba(13, 13, 13, 0.85); 
 }
 
 /* ==================== RESPONSIVE ==================== */
@@ -337,8 +338,8 @@ body {
   border-radius: var(--radius-full);
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--color-blue-main); /* Cambiado al nuevo Azul Principal */
-  background: rgba(10, 78, 163, 0.1); /* Fondo azul sutil unificado */
+  color: var(--color-brand-main); /* Borgoña Corporativo Principal */
+  background: var(--bg-icon-brand); /* Fondo sutil para iconos en Borgoña (rgba(92, 33, 33, 0.08)) */
   margin-bottom: 12px;
 }
 
@@ -347,7 +348,12 @@ body {
   font-size: clamp(2rem, 4vw, 2.6rem);
   font-weight: 700;
   margin-bottom: 12px;
-  color: var(--color-hero-title);
+  color: var(--color-text-dark); /* El texto base en negro/oscuro neutro */
+}
+
+/* El span interno del título se destaca con el Borgoña Corporativo */
+.patient-rights__title span {
+  color: var(--color-brand-main);
 }
 
 .patient-rights__description {
@@ -365,7 +371,7 @@ body {
   gap: 22px;
 }
 
-/* CARD (Mantiene el texto al frente del icono en una fila limpia) */
+/* CARD */
 .patient-rights__card {
   display: flex;
   gap: 14px;
@@ -373,17 +379,17 @@ body {
   border-radius: var(--radius-md);
 
   background: var(--color-white);
-  border: 1px solid var(--color-border-soft);
+  border: 1px solid var(--color-border-soft); /* Basado en Gris Tecnológico */
 
   box-shadow: var(--shadow-card);
   transition: var(--transition-base);
-  align-items: flex-start; /* Asegura alineación limpia arriba si el texto es largo */
+  align-items: flex-start; /* Alineación limpia arriba para textos largos */
 }
 
 .patient-rights__card:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow-card-hover);
-  border-color: rgba(37, 99, 235, 0.2); /* Sincronizado con azul brillante */
+  box-shadow: var(--shadow-card-hover); /* Sombra suavizada acorde a la paleta borgoña */
+  border-color: rgba(92, 33, 33, 0.25); /* Reemplazado el azul por un destello Borgoña suave */
 }
 
 /* ICON */
@@ -396,14 +402,14 @@ body {
   align-items: center;
   justify-content: center;
 
-  background: var(--bg-icon-blue); /* Cambiado a tu fondo de icono Azul unificado */
+  background: var(--bg-icon-brand); /* Fondo sutil Borgoña de tus tokens */
   flex-shrink: 0;
   transition: var(--transition-fast);
 }
 
-/* El contenedor del icono se ilumina un poco más en hover con el tono azul */
+/* El contenedor del icono se ilumina un poco más usando el Borgoña Suave */
 .patient-rights__card:hover .patient-rights__icon {
-  background: rgba(37, 99, 235, 0.15);
+  background: rgba(125, 50, 50, 0.15); /* Basado en tu color-brand-medium */
 }
 
 .patient-rights__icon img {
@@ -422,9 +428,9 @@ body {
   transition: color 0.3s ease;
 }
 
-/* El título del derecho/deber se enciende en tu Azul Principal en hover */
+/* El título del derecho se enciende en el color de hover corporativo */
 .patient-rights__card:hover .patient-rights__content h3 {
-  color: var(--color-blue-main);
+  color: var(--color-brand-hover); /* Cambia al Borgoña de interacciones */
 }
 
 .patient-rights__content p {
@@ -446,7 +452,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
 /* ==================== PATIENT DUTIES ==================== */
 
 .patient-duties {
@@ -466,8 +471,8 @@ body {
   padding: 6px 14px;
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--color-blue-main); /* Cambiado al nuevo Azul Principal */
-  background: rgba(10, 78, 163, 0.1); /* Fondo azul sutil unificado */
+  color: var(--color-brand-main); 
+  background: var(--bg-icon-brand); 
   border-radius: var(--radius-full);
   margin-bottom: 12px;
 }
@@ -476,7 +481,7 @@ body {
   font-family: var(--font-title); /* Fuerza Poppins */
   font-size: clamp(1.8rem, 4vw, 2.4rem);
   font-weight: 700;
-  color: var(--color-hero-title);
+  color: var(--color-hero-title); /* Borgoña Corporativo */
   margin-bottom: 10px;
 }
 
@@ -514,7 +519,7 @@ body {
 .patient-duties__item:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-card-hover);
-  border-color: rgba(37, 99, 235, 0.2); /* Sincronizado con tu azul brillante */
+  border-color: rgba(92, 33, 33, 0.25); /* 🌟 CAMBIADO: Reemplazado azul por destello Borgoña suave */
 }
 
 /* ICON */
@@ -526,18 +531,18 @@ body {
   align-items: center;
   justify-content: center;
 
-  border-radius: 12px; /* Mantiene tus esquinas personalizadas de 12px */
-  background: var(--bg-icon-blue); /* Cambiado a tu variable de icono Azul */
+  border-radius: var(--radius-xs); /* 🌟 OPTIMIZADO: Usa tu token de 12px (radius-xs) */
+  background: var(--bg-icon-brand); /* 🌟 CAMBIADO: Fondo de icono en Borgoña sutil */
   transition: var(--transition-fast);
 }
 
-/* El fondo del icono reacciona en hover con el tono azul brillante */
+/* El fondo del icono reacciona en hover con el tono borgoña suave */
 .patient-duties__item:hover .patient-duties__icon {
-  background: rgba(37, 99, 235, 0.15);
+  background: rgba(125, 50, 50, 0.15); /* 🌟 CAMBIADO: Basado en tu color-brand-medium */
 }
 
 .patient-duties__icon img {
-  width: 36px; /* Ajuste milimétrico óptimo */
+  width: 36px;
   height: 36px;
   object-fit: contain;
 }
@@ -552,9 +557,9 @@ body {
   transition: color 0.3s ease;
 }
 
-/* El texto de la obligación cambia a tu Azul Principal en hover */
+/* El texto de la obligación cambia al Borgoña en el hover */
 .patient-duties__item:hover .patient-duties__text {
-  color: var(--color-blue-main);
+  color: var(--color-brand-hover); /* 🌟 CAMBIADO: Borgoña de interacciones corporativo */
 }
 
 /* ==================== RESPONSIVE ==================== */
