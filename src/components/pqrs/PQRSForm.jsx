@@ -1,8 +1,8 @@
-import peticionIcon from "../../assets/Iconos/email.png";
-import quejaIcon from "../../assets/Iconos/email.png";
-import reclamoIcon from "../../assets/Iconos/email.png";
-import sugerenciaIcon from "../../assets/Iconos/email.png";
-import felicitacionIcon from "../../assets/Iconos/email.png";
+import peticionIcon from "../../assets/Iconos/Derecho2.png";
+import quejaIcon from "../../assets/Iconos/Queja.png";
+import reclamoIcon from "../../assets/Iconos/Reclamo.png";
+import sugerenciaIcon from "../../assets/Iconos/Sugerencia.png";
+import felicitacionIcon from "../../assets/Iconos/Felicidades.png";
 import { useState } from "react";
 
 function PQRSForm() {

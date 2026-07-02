@@ -154,47 +154,50 @@ body {
 .ppss-hero {
   position: relative;
   width: 100%;
-  min-height: 72vh;
-
+  height: calc(100vh - 120px);
+  min-height: 580px;
+  max-height: 720px;
   display: flex;
   align-items: center;
-
+  overflow: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
 } cutout-edge,
 
 /* OVERLAY (Máscara sincronizada con la suite de banners) */
 .ppss-hero__overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
-
   background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(255, 255, 255, 0.85) 40%,
-    rgba(255, 255, 255, 0.55) 72%,
-    rgba(255, 255, 255, 0.12) 100%
+    135deg,
+    rgba(255, 255, 255, 0.65) 0%,   
+    rgba(255, 255, 255, 0.40) 50%,  
+    rgba(255, 255, 255, 0.15) 100%  
   );
+
+  z-index: 1;
 }
 
 /* CONTAINER (Homologado con la grilla y altura del ecosistema) */
 .ppss-hero__container {
   position: relative;
   z-index: 2;
-
   width: 100%;
-  max-width: 1300px;
-  margin: auto;
-  
-  padding: 120px 32px 60px; /* Ajustado para dejar el espacio del Navbar intacto */
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 30px 32px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* CONTENT */
 .ppss-hero__content {
-  max-width: 860px;
+  max-width: 850px;
+  margin-left: 50px;
+  margin-bottom: 40px;
 }
 
 /* TITLE */
@@ -212,105 +215,87 @@ body {
   font-family: var(--font-body); /* Fuerza Inter */
   font-size: 1.12rem;
   line-height: 1.8;
-  color: var(--color-text-body);
+  color: rgba(13, 13, 13, 0.85); 
   margin-bottom: 40px;
 }
 
-/* CARDS WRAPPER */
-.ppss-hero__cards {
+/* ==================== STATS / ACCESOS ==================== */
+
+.ppss-hero__stats {
   display: flex;
-  align-items: stretch;
-  gap: 14px;
-  flex-wrap: nowrap; /* Mantiene la fila horizontal en desktop */
+  flex-wrap: nowrap; /* Mantiene tus cajas alineadas horizontalmente en desktop */
+  gap: 12px;
 }
 
-/* CARD INDIVIDUAL (Estructura flex horizontal: texto al frente del icono) */
-.ppss-hero__card {
+/* CARD (Texto directamente al frente del icono) */
+.ppss-hero__stat {
   display: flex;
   align-items: center;
-  gap: 12px;
-  flex: 1;
-
-  padding: 14px 16px;
-  border-radius: var(--radius-md); /* Subido a md para suavizar los bordes como los otros bloques */
-
-  background: var(--bg-card); /* Sincronizado a tu fondo de tarjeta unificado */
-  border: 1px solid var(--color-border-soft);
-  backdrop-filter: blur(10px);
-
+  gap: 10px;
+  width: 260px;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  background: rgba(92, 33, 33, 0.18); 
+  border: 1px solid rgba(92, 33, 33, 0.35); 
+  backdrop-filter: blur(6px); 
   box-shadow: var(--shadow-card);
   transition: var(--transition-base);
 }
 
-.ppss-hero__card:hover {
-  transform: translateY(-3px);
+.ppss-hero__stat:hover {
+  transform: translateY(-5px);
   box-shadow: var(--shadow-card-hover);
-  border-color: rgba(92, 33, 33, 0.25);
+  background: rgba(92, 33, 33, 0.28); 
+  border-color: rgba(92, 33, 33, 0.60);
 }
 
-/* ICON CONTAINER */
-.ppss-hero__card-icon {
-  width: 46px;
-  height: 46px;
-  border-radius: var(--radius-sm); /* Unificado a los radios del sistema */
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  background: rgba(92, 33, 33, 0.08); /* Fondo Borgoña translúcido suave */
-  flex-shrink: 0;
-  transition: var(--transition-fast);
-}
-
-/* El fondo del icono se ilumina un toque más en hover */
-.ppss-hero__card:hover .ppss-hero__card-icon {
-  background: rgba(92, 33, 33, 0.15);
-}
-
-.ppss-hero__card-icon img {
-  width: 24px; /* Ajustado el tamaño de imagen relativo para no desbordar el contenedor */
-  height: 24px;
+/* ICON */
+.ppss-hero__stat img {
+  width: 30px;
+  height: 30px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
-/* CARD CONTENT */
-.ppss-hero__card-content {
+/* CONTENEDOR TEXTO */
+.ppss-hero__text {
   display: flex;
   flex-direction: column;
 }
 
-.ppss-hero__card-content h3 {
+/* LABEL (Cambiado a Gris Oscuro para mayor elegancia clínica) */
+.ppss-hero__label {
   font-family: var(--font-title); /* Fuerza Poppins */
-  font-size: 0.92rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  color: var(--color-text-dark); /* Color oscuro base para consistencia visual */
-  margin-bottom: 2px;
+  color: var(--color-text-dark);
   line-height: 1.3;
+  margin-bottom: 2px;
   transition: color 0.3s ease;
 }
 
-/* El título de la cajita se enciende en Borgoña en hover */
-.ppss-hero__card:hover .ppss-hero__card-content h3 {
+/* Feedback interactivo premium en Borgoña Principal al pasar el cursor */
+.ppss-hero__stat:hover .ppss-hero__label {
   color: var(--color-brand-main);
 }
 
-.ppss-hero__card-content p {
-  font-family: var(--font-body); /* Fuerza Inter */
-  font-size: 0.78rem;
+/* DESC */
+.ppss-hero__desc {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
   line-height: 1.4;
-  color: var(--color-text-soft);
+  color: rgba(13, 13, 13, 0.85); 
 }
 
 /* ==================== RESPONSIVE ==================== */
 
 @media (max-width: 992px) {
-  .ppss-hero__cards {
+  .ppss-hero__stats {
     flex-direction: column; /* Colapsa verticalmente en tablets y pantallas medianas */
     gap: 12px;
   }
 
-  .ppss-hero__card {
+  .ppss-hero__stat {
     width: 100%;
   }
 }

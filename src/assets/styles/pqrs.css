@@ -153,15 +153,15 @@ body {
 .pqrs-hero {
   position: relative;
   width: 100%;
-  min-height: 72vh;
-
+  height: calc(100vh - 120px);
+  min-height: 580px;
+  max-height: 720px;
   display: flex;
   align-items: center;
-
+  overflow: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 /* OVERLAY (Sincronizado con el resto de los hero) */
@@ -169,13 +169,12 @@ body {
   position: absolute;
   inset: 0;
   z-index: 1;
-
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(255, 255, 255, 0.85) 38%,
-    rgba(255, 255, 255, 0.55) 70%,
-    rgba(255, 255, 255, 0.12) 100%
+    rgba(255, 255, 255, 0.92) 0%,   
+    rgba(255, 255, 255, 0.65) 25%,  
+    rgba(255, 255, 255, 0.20) 60%,  
+    rgba(255, 255, 255, 0.0) 100%   
   );
 }
 
@@ -183,17 +182,21 @@ body {
 .pqrs-hero__container {
   position: relative;
   z-index: 2;
-
   width: 100%;
-  max-width: 1300px;
-  margin: auto;
-
-  padding: 120px 32px 60px; /* Sincronizado para darle aire respecto al Navbar */
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 30px 32px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* CONTENT */
 .pqrs-hero__content {
-  max-width: 780px;
+  max-width: 700px;
+  margin-left: 50px;
+  margin-bottom: 40px;
 }
 
 /* TITLE */
@@ -228,14 +231,12 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-
-  width: 300px; /* Respeta tu ancho fijo para tarjetas compactas */
+  width: 260px;
   padding: 12px 14px;
   border-radius: var(--radius-md);
-
-  background: var(--bg-card); /* 255, 255, 255, 0.92 */
-  border: 1px solid var(--color-border-soft);
-
+  background: rgba(92, 33, 33, 0.18); 
+  border: 1px solid rgba(92, 33, 33, 0.35); 
+  backdrop-filter: blur(6px); 
   box-shadow: var(--shadow-card);
   transition: var(--transition-base);
 }
@@ -243,7 +244,8 @@ body {
 .pqrs-hero__stat:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-card-hover);
-  border-color: rgba(92, 33, 33, 0.2);
+  background: rgba(92, 33, 33, 0.28); 
+  border-color: rgba(92, 33, 33, 0.60);
 }
 
 /* ICON */
@@ -278,10 +280,10 @@ body {
 
 /* DESC */
 .pqrs-hero__desc {
-  font-family: var(--font-body); /* Fuerza Inter */
+  font-family: var(--font-body);
   font-size: 0.72rem;
   line-height: 1.4;
-  color: var(--color-text-soft);
+  color: rgba(13, 13, 13, 0.85); 
 }
 
 /* ==================== RESPONSIVE ==================== */
@@ -632,12 +634,11 @@ body {
 .pqrs-contact__overlay {
   position: absolute;
   inset: 0;
-
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.95),
-    rgba(255, 255, 255, 0.88),
-    rgba(255, 255, 255, 0.75)
+    rgba(255, 255, 255, 0.65) 0%,   
+    rgba(255, 255, 255, 0.40) 50%,  
+    rgba(255, 255, 255, 0.15) 100%  
   );
 
   z-index: 1;
@@ -705,7 +706,7 @@ body {
   margin: 0 auto 40px;
   font-size: 1.12rem;
   line-height: 1.9;
-  color: var(--color-text-body);
+  color: rgba(13, 13, 13, 0.85); 
 }
 
 /* ==================== ACTIONS (BOTONES) ==================== */

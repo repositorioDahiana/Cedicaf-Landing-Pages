@@ -1,12 +1,12 @@
 import duty1 from "../../assets/Iconos/Deber1.png";
-import duty2 from "../../assets/Iconos/email.png";
-import duty3 from "../../assets/Iconos/email.png";
-import duty4 from "../../assets/Iconos/email.png";
-import duty5 from "../../assets/Iconos/email.png";
-import duty6 from "../../assets/Iconos/email.png";
-import duty7 from "../../assets/Iconos/email.png";
-import duty8 from "../../assets/Iconos/email.png";
-import duty9 from "../../assets/Iconos/email.png";
+import duty2 from "../../assets/Iconos/Deber2.png";
+import duty3 from "../../assets/Iconos/Deber3.png";
+import duty4 from "../../assets/Iconos/Deber4.png";
+import duty5 from "../../assets/Iconos/Deber5.png";
+import duty6 from "../../assets/Iconos/Deber6.png";
+import duty7 from "../../assets/Iconos/Deber7.png";
+import duty8 from "../../assets/Iconos/Deber8.png";
+import duty9 from "../../assets/Iconos/Deber9.png";
 
 const duties = [
   {

@@ -1,9 +1,8 @@
 import techImg from "../../assets/images/Tecnologia.png";
 
-import equipoIcon from "../../assets/Iconos/email.png";
-import certificacionIcon from "../../assets/Iconos/email.png";
-import especialistasIcon from "../../assets/Iconos/email.png";
-import resultadosIcon from "../../assets/Iconos/email.png";
+import equipoIcon from "../../assets/Iconos/ResonanciaPaciente.png";
+import especialistasIcon from "../../assets/Iconos/Especialidad5.png";
+import resultadosIcon from "../../assets/Iconos/Reporte.png";
 
 function TechnologySection() {
   return (
@@ -14,11 +13,12 @@ function TechnologySection() {
         {/* HEADER */}
         <div className="technology__header">
           <h2 className="technology__title">
-            Tecnología de <span className="text-gradient-blue">Punta</span>
+            Tecnología de vanguardia <span className="text-gradient-blue">para tu diagnóstico</span>
           </h2>
 
           <p className="technology__description">
-            ??
+            En CEDICAF contamos con equipos médicos de última generación que garantizan imágenes 
+            de alta definición en menor tiempo, asegurando resultados precisos, confiables y cómodos para tu bienestar.
           </p>
         </div>
 

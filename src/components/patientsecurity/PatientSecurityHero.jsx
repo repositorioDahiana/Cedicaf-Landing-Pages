@@ -1,6 +1,6 @@
 import heroBg from "../../assets/images/Seguridad.png";
-import integralIcon from "../../assets/Iconos/email.png";
-import seguridadIcon from "../../assets/Iconos/email.png";
+import integralIcon from "../../assets/Iconos/Enfoque.png";
+import seguridadIcon from "../../assets/Iconos/Cultura.png";
 
 function PatientSecurityHero() {
   return (

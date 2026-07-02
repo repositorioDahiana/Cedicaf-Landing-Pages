@@ -153,11 +153,12 @@ body {
 .about-hero {
   position: relative;
   width: 100%;
-  min-height: 78vh;
+  height: calc(100vh - 120px);
+  min-height: 580px;
+  max-height: 720px;
   display: flex;
   align-items: center;
   overflow: hidden;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -188,14 +189,11 @@ body {
 .about-hero__container {
   position: relative;
   z-index: 2;
-
   width: 100%;
   max-width: 1400px;
+  min-height: 100vh;
   margin: 0 auto;
-
-  padding: 120px 32px 48px;
-  min-height: 78vh;
-
+  padding: 30px 32px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,8 +204,9 @@ body {
 ===================================================== */
 
 .about-hero__content {
-  max-width: 620px;
-  margin-left: 20px;
+  max-width: 700px;
+  margin-left: 50px;
+  margin-bottom: 40px;
 }
 
 /* INSIGNIA: Cambiada de azul brillante a un sutil borgoña corporativo */
@@ -699,14 +698,14 @@ body {
 
 /* TELITA COHESIVA (YA NO TAN BLANCA RIGIDA) */
 .values-section::before {
-  content: "";
   position: absolute;
   inset: 0;
-
-  /* CAMBIO: Se usa el fondo clínico (#F8F9FA) a un 92% de opacidad 
-     para que la imagen de fondo se intuya de manera muy sutil 
-     y la sección gane un color estático, limpio y corporativo */
-  background: rgba(248, 249, 250, 0.92); 
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.65) 0%,   
+    rgba(255, 255, 255, 0.40) 50%,  
+    rgba(255, 255, 255, 0.15) 100%  
+  );
 
   z-index: 1;
 }

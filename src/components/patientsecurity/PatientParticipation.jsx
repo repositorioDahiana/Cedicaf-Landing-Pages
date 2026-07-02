@@ -1,9 +1,9 @@
-import participationIcon from "../../assets/Iconos/email.png";
-import contributivoIcon from "../../assets/Iconos/email.png";
-import subsidiadoIcon from "../../assets/Iconos/email.png";
-import especialIcon from "../../assets/Iconos/email.png";
-import segurosIcon from "../../assets/Iconos/email.png";
-import jovenesIcon from "../../assets/Iconos/email.png";
+import participationIcon from "../../assets/Iconos/Participacion.png";
+import contributivoIcon from "../../assets/Iconos/Contributivo.png";
+import subsidiadoIcon from "../../assets/Iconos/Subsidio.png";
+import especialIcon from "../../assets/Iconos/Aliados4.png";
+import segurosIcon from "../../assets/Iconos/Derecho10.png";
+import jovenesIcon from "../../assets/Iconos/Adolecente.png";
 
 function PatientParticipation() {
   return (

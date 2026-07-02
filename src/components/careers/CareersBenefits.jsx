@@ -1,9 +1,9 @@
-import bienestarIcon from "../../assets/Iconos/email.png";
-import formacionIcon from "../../assets/Iconos/email.png";
-import tecnologiaIcon from "../../assets/Iconos/email.png";
-import estabilidadIcon from "../../assets/Iconos/email.png";
-import equipoIcon from "../../assets/Iconos/email.png";
-import crecimientoIcon from "../../assets/Iconos/email.png";
+import bienestarIcon from "../../assets/Iconos/Beneficio1.png";
+import formacionIcon from "../../assets/Iconos/Capacitacion.png";
+import tecnologiaIcon from "../../assets/Iconos/ResonanciaPaciente.png";
+import estabilidadIcon from "../../assets/Iconos/Beneficio2.png";
+import equipoIcon from "../../assets/Iconos/Equipo.png";
+import crecimientoIcon from "../../assets/Iconos/Mejoramiento.png";
 
 function CareersBenefits() {
   return (

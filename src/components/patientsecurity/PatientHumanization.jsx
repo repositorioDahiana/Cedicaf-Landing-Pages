@@ -1,6 +1,6 @@
-import capIcon from "../../assets/Iconos/email.png";
-import cultureIcon from "../../assets/Iconos/email.png";
-import safeIcon from "../../assets/Iconos/email.png";
+import capIcon from "../../assets/Iconos/Capacitacion.png";
+import cultureIcon from "../../assets/Iconos/Deber5.png";
+import safeIcon from "../../assets/Iconos/Ambiente.png";
 
 function PatientHumanization() {
   return (

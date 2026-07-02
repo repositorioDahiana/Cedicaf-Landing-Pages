@@ -25,44 +25,14 @@ function AboutHero() {
           </h1>
 
           <p className="about-hero__description">
-            ?
+            CEDICAF centro de alta tecnología diagnóstica comprometido 
+            con brindar estudios de imagenología precisos, oportunos y confiables. 
+            Contamos con un equipo humano especializado y tecnología de vanguardia 
+            para la realización de resonancia magnética, ecografía, radiología  y estudios 
+            especializados, contribuyendo al diagnóstico temprano y a la toma de decisiones 
+            médicas acertadas. Nuestra prioridad es ofrecer una experiencia cálida, segura y centrada en el paciente.
           </p>
-        </div>
-
-        {/* STATS */}
-        <div className="about-hero__stats">
-
-          {/* Card 1 */}
-          <article className="about-hero__statCard">
-            <img src={sedesIcon} className="about-hero__statIcon" />
-
-            <div className="about-hero__statText">
-              <strong>+5 sedes</strong>
-              <span>en Colombia</span>
-            </div>
-          </article>
-
-          {/* Card 2 */}
-          <article className="about-hero__statCard">
-            <img src={isoIcon} className="about-hero__statIcon" />
-
-            <div className="about-hero__statText">
-              <strong>ISO 9001</strong>
-              <span>Certificados</span>
-            </div>
-          </article>
-
-          {/* Card 3 */}
-          <article className="about-hero__statCard">
-            <img src={pacientesIcon} className="about-hero__statIcon" />
-
-            <div className="about-hero__statText">
-              <strong>+500K</strong>
-              <span>Pacientes</span>
-            </div>
-          </article>
-
-        </div>
+        </div>        
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 import heroBg from "../../assets/images/PPSS.png";
-import controlIcon from "../../assets/Iconos/email.png";
-import comunidadIcon from "../../assets/Iconos/email.png";
-import capacitacionIcon from "../../assets/Iconos/email.png";
+import controlIcon from "../../assets/Iconos/Vigilar.png";
+import comunidadIcon from "../../assets/Iconos/ParticipacionComunitaria.png";
+import capacitacionIcon from "../../assets/Iconos/Capacitacion.png";
 
 function PpssHero() {
   return (
@@ -29,55 +29,34 @@ function PpssHero() {
             sector salud.
           </p>
 
-          {/* 🔥 CARDS */}
-          <div className="ppss-hero__cards">
+          {/* 🔥 STATS */}
+          <div className="ppss-hero__stats">
 
             {/* CARD 1 */}
-            <div className="ppss-hero__card">
-
-              <div className="ppss-hero__card-icon">
-                <img src={controlIcon} alt="Control Social" />
+            <div className="ppss-hero__stat">
+              <img src={controlIcon} alt="Control Social" />
+              <div className="ppss-hero__text">
+                <span className="ppss-hero__label">Control Social</span>
+                <span className="ppss-hero__desc">Vigilancia ciudadana</span>
               </div>
-
-              <div className="ppss-hero__card-content">
-                <h3>Control Social</h3>
-                <p>Vigilancia ciudadana</p>
-              </div>
-
             </div>
 
             {/* CARD 2 */}
-            <div className="ppss-hero__card">
-
-              <div className="ppss-hero__card-icon">
-                <img
-                  src={comunidadIcon}
-                  alt="Participación Comunitaria"
-                />
+            <div className="ppss-hero__stat">
+              <img src={comunidadIcon} alt="Participación Comunitaria" />
+              <div className="ppss-hero__text">
+                <span className="ppss-hero__label">Participación Comunitaria</span>
+                <span className="ppss-hero__desc">Espacios de diálogo</span>
               </div>
-
-              <div className="ppss-hero__card-content">
-                <h3>Participación Comunitaria</h3>
-                <p>Espacios de diálogo</p>
-              </div>
-
             </div>
 
             {/* CARD 3 */}
-            <div className="ppss-hero__card">
-
-              <div className="ppss-hero__card-icon">
-                <img
-                  src={capacitacionIcon}
-                  alt="Capacitación"
-                />
+            <div className="ppss-hero__stat">
+              <img src={capacitacionIcon} alt="Capacitación" />
+              <div className="ppss-hero__text">
+                <span className="ppss-hero__label">Capacitación</span>
+                <span className="ppss-hero__desc">Formación continua</span>
               </div>
-
-              <div className="ppss-hero__card-content">
-                <h3>Capacitación</h3>
-                <p>Formación continua</p>
-              </div>
-
             </div>
 
           </div>

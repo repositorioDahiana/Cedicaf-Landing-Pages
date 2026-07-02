@@ -1,7 +1,7 @@
 import heroBg from "../../assets/images/PQRS.png";
-import tiempoIcon from "../../assets/Iconos/email.png";
-import privacidadIcon from "../../assets/Iconos/email.png";
-import soporteIcon from "../../assets/Iconos/email.png";
+import tiempoIcon from "../../assets/Iconos/Respuesta.png";
+import privacidadIcon from "../../assets/Iconos/Derecho10.png";
+import soporteIcon from "../../assets/Iconos/Disponibilidad.png";
 
 function PQRSHero() {
   return (

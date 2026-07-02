@@ -1,8 +1,8 @@
 import eficienciaIcon from "../../assets/Iconos/eficiencia.png";
 import servicioIcon from "../../assets/Iconos/servicio.png";
-import igualdadIcon from "../../assets/Iconos/email.png";
-import compromisoIcon from "../../assets/Iconos/email.png";
-import equipoIcon from "../../assets/Iconos/email.png";
+import igualdadIcon from "../../assets/Iconos/Deber5.png";
+import compromisoIcon from "../../assets/Iconos/Convenio.png";
+import equipoIcon from "../../assets/Iconos/Equipo.png";
 
 function PrinciplesSection() {
   return (

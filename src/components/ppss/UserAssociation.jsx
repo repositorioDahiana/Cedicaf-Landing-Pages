@@ -1,11 +1,11 @@
 import React from "react";
-import representarIcon from "../../assets/Iconos/email.png";
-import calidadIcon from "../../assets/Iconos/email.png";
-import controlIcon from "../../assets/Iconos/email.png";
-import comunicacionIcon from "../../assets/Iconos/email.png";
-import mejoraIcon from "../../assets/Iconos/email.png";
-import derechosIcon from "../../assets/Iconos/email.png";
-import asociacionIcon from "../../assets/Iconos/email.png";
+import representarIcon from "../../assets/Iconos/Derechos.png";
+import calidadIcon from "../../assets/Iconos/Vigilar.png";
+import controlIcon from "../../assets/Iconos/ParticipacionComunitaria.png";
+import comunicacionIcon from "../../assets/Iconos/Derecho2.png";
+import mejoraIcon from "../../assets/Iconos/Mejoramiento.png";
+import derechosIcon from "../../assets/Iconos/Compromiso.png";
+import asociacionIcon from "../../assets/Iconos/Participacion.png";
 
 const functions = [
   {

@@ -1,8 +1,8 @@
-import capacitacionIcon from "../../assets/Iconos/email.png";
-import controlIcon from "../../assets/Iconos/email.png";
-import estrategiaIcon from "../../assets/Iconos/email.png";
-import participacionIcon from "../../assets/Iconos/email.png";
-import promocionIcon from "../../assets/Iconos/email.png";
+import capacitacionIcon from "../../assets/Iconos/Capacitacion.png";
+import controlIcon from "../../assets/Iconos/ParticipacionComunitaria.png";
+import estrategiaIcon from "../../assets/Iconos/Estrategia.png";
+import participacionIcon from "../../assets/Iconos/Atencion.png";
+import promocionIcon from "../../assets/Iconos/Deber6.png";
 
 const axes = [
   {

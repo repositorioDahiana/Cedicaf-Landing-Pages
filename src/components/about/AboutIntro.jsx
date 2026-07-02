@@ -10,7 +10,7 @@ function AboutIntro() {
       {/* FRASE */}
       <div className="about-intro__quote">
         <p>
-          “”
+          “La precisión que los médicos necesitan, la calidez que los pacientes merecen. En CEDICAF somos un centro de alta tecnología diagnóstica comprometido con brindar estudios de imagenología precisos, oportunos y confiables”
         </p>
       </div>
 

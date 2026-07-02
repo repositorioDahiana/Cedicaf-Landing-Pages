@@ -1,8 +1,8 @@
 import heroBg from "../../assets/images/Trabajo.png";
 
 // 🔥 ICONOS
-import vacantesIcon from "../../assets/Iconos/email.png";
-import hojaVidaIcon from "../../assets/Iconos/email.png";
+import vacantesIcon from "../../assets/Iconos/Trabajo1.png";
+import hojaVidaIcon from "../../assets/Iconos/Enviar.png";
 
 function CareersHero() {
   return (
