@@ -1,6 +1,6 @@
 import historiaBg from "../../assets/images/QuienesSomos.png";
 
-import sedesIcon from "../../assets/Iconos/ubicacion.png";
+import sedesIcon from "../../assets/Iconos/Ubicacion.png";
 import isoIcon from "../../assets/Iconos/icontec.png";
 import pacientesIcon from "../../assets/Iconos/ResonanciaPaciente.png";
 
