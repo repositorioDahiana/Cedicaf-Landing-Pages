@@ -43,10 +43,6 @@ function AlliesPols() {
                 Pólizas de Salud
               </h2>
 
-              <p className="allies-prepaid__subtitle">
-                5 entidades aliadas
-              </p>
-
             </div>
 
           </div>

@@ -48,10 +48,6 @@ function AlliesConEmp() {
                 Convenio Empresas
               </h2>
 
-              <p className="allies-prepaid__subtitle">
-                7 entidades aliadas
-              </p>
-
             </div>
 
           </div>

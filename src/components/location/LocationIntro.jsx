@@ -334,7 +334,7 @@ function LocationsPreview() {
                 </a>
 
                 <a
-                  href="/agendamiento"
+                  href="https://appcedira.com/solicitarcita/public/solicitud-examen"
                   className="btn-base btn-secondary-outline"
                 >
                   Agendar cita

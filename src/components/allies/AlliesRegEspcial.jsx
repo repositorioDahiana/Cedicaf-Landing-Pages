@@ -46,10 +46,6 @@ function AlliesRegEspcial() {
                 Régimen Especial y EPS
               </h2>
 
-              <p className="allies-prepaid__subtitle">
-                6 entidades aliadas
-              </p>
-
             </div>
 
           </div>

@@ -74,7 +74,7 @@ function Navbar() {
 
           {/* PSE */}
           <a
-            href="https://portalpagos.davivienda.com/#/comercio/11396/RADIOLOGOS"
+            href="https://portalpagos.davivienda.com/#/comercio/11394/CEDICAF"
             target="_blank"
             rel="noopener noreferrer"
             className="pse-button"
