@@ -5,7 +5,16 @@ import logo7 from "../../assets/images/LogoSeguroBol.png";
 import logo8 from "../../assets/images/LogoAxaColpatria.png";
 import logo9 from "../../assets/images/LogoAllianz.png";
 import logo10 from "../../assets/images/LogoPositiva.png";
-
+import logo12 from "../../assets/images/LogoColmena.png";
+import logo25 from "../../assets/images/Fondo.jpg";
+import logo26 from "../../assets/images/Fondo.jpg";
+import logo27 from "../../assets/images/Fondo.jpg";
+import logo28 from "../../assets/images/Fondo.jpg";
+import logo29 from "../../assets/images/Fondo.jpg";
+import logo30 from "../../assets/images/Fondo.jpg";
+import logo31 from "../../assets/images/Fondo.jpg";
+import logo32 from "../../assets/images/Fondo.jpg";
+import logo33 from "../../assets/images/Fondo.jpg";
 
 const allies = [
   { name: "Seguros De Vida Suramericana S.A", icon: logo6 },
@@ -13,6 +22,16 @@ const allies = [
   { name: "Axa Colpatria Seguros De Vida S.A", icon: logo8 },
   { name: "Allianz Seguros De Vida S.A", icon: logo9 },
   { name: "Positiva Compañía De Seguros", icon: logo10 },
+  { name: "Colmena Riesgos Laborales ARL", icon: logo12 },
+  { name: "Aseguradora Solidaria De Colombia", icon: logo25 },
+  { name: "Bmi Colombia Compañia De Seguros De Vida S.A.", icon: logo26 },
+  { name: "Compañía De Seguros Aurora", icon: logo27 },
+  { name: "Compañia Mundial de Seguros (polizas)", icon: logo28 },
+  { name: "La Equidad Seguros De Vida", icon: logo29 },
+  { name: "HDI Seguros Colombia (antes Liberty)", icon: logo30 },
+  { name: "Mapfre Colombia Vida Seguros (Arl-Polizas De Salud Y Estudiantil)", icon: logo31 },
+  { name: "Pan American Life De Colombia", icon: logo32 },
+  { name: "Positiva Compañia De Seguros Arl", icon: logo33 },
 ];
 
 function AlliesPols() {

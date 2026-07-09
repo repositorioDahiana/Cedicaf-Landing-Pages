@@ -4,7 +4,6 @@ import logo18 from "../../assets/images/LogoSanitas.png";
 import logo19 from "../../assets/images/LogoSOS.png";
 import logo20 from "../../assets/images/LogoEmisanar.png";
 import logo21 from "../../assets/images/LogoPolicia.png";
-import logo22 from "../../assets/images/LogoCasur.png";
 import logo23 from "../../assets/images/LogoMaisfen.png";
 
 
@@ -13,7 +12,6 @@ const allies = [
   { name: "Servicio Occidental De Salud S.O.S.", icon: logo19 },
   { name: "Emssanar S.A.S", icon: logo20 },
   { name: "Regional De Aseguramiento En Salud N°4", icon: logo21 },
-  { name: "Caja De Sueldos De Retiro De La Policia Nacional", icon: logo22 },
   { name: "Union Temporal Salud Integral Maisfen", icon: logo23 },
 
 ];

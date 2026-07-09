@@ -6,7 +6,8 @@ import logo2 from "../../assets/images/LogoColsanitas.png";
 import logo3 from "../../assets/images/LogoColmedica.png";
 import logo4 from "../../assets/images/LogoMedisanitas.png";
 import logo5 from "../../assets/images/LogoMedPlus.png";
-
+import logo24 from "../../assets/images/LogoAxaColpatria.png";
+import logo7 from "../../assets/images/LogoSeguroBol.png";
 
 
 const allies = [
@@ -15,6 +16,8 @@ const allies = [
   { name: "Colmedica S.A.", icon: logo3 },
   { name: "Medisanitas", icon: logo4 },
   { name: "Medplus S.A", icon: logo5 },
+  { name: "Axa Colpatria Medicina Prepagada y Polizas", icon: logo24 },
+  { name: "Compañía De Seguros Bolívar", icon: logo7 },
 
 ];
 

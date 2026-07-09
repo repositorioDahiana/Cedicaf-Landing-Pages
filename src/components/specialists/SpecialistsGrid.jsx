@@ -6,48 +6,48 @@ import doc5 from "../../assets/images/Doctor5.jpeg";
 import doc6 from "../../assets/images/Doctor6.png";
 
 const specialists = [
-  {
-    id: 1,
-    name: "Dra. Margarita Maria Patiño Arenas",
-    specialty: "Médico Radiólogo",
-    experience: "Radiología",
-    image: doc1
-  },
-  {
-    id: 2,
-    name: "Dra. Ingrid Vivas",
-    specialty: "Médico Radiólogo / Especialista en mamas",
-    experience: "Especialista en Mamas",
-    image: doc2,
-  },
-  {
-    id: 3,
-    name: "Dr. Juan Pablo Ovalle",
-    specialty: "Médico Neurorradiólogo Diagnóstico / Neurorradiólogo",
-    experience: "Neurorradiología",
-    image: doc3
-  },
-  {
-    id: 4,
-    name: "Dr. Jairo Leon Acevedo",
-    specialty: "Médico Internista / Especialista en Cardiología / Subespecialista en diagnóstico no invasivo",
-    experience: "Cardiología",
-    image: doc4,
-  },
-  {
-    id: 5,
-    name: "Dr. Alonso Gómez García",
-    specialty: "Médico Especialista en Pediatría y en Hemodinamia en Cardiopatías Congénitas",
-    experience: "Pediatría / Hemodinamia",
-    image: doc5,
-  },
-  {
-      id: 6,
-      name: "Dr. Luis Fernando Grisales",
-      specialty: "Médico Radiólogo / Director Científico Fellow Resonancia de Prostata",
-      experience: "Radiólogo",
-      image: doc6,
-    },
+      {
+        id: 1,
+        name: "Dra. Margarita Maria Patiño Arenas",
+        specialty: "Médica Especialista en Radiología",
+        experience: "Radiólogo",
+        image: doc1
+      },
+      {
+        id: 2,
+        name: "Dra. Ingrid Vivas",
+        specialty: "Médica Especialista en Radiología , Especialista en Imágenes de la mama",
+        experience: "Radiólogo / Especialista en Imágenes de la mama",
+        image: doc2,
+      },
+      {
+        id: 3,
+        name: "Dr. Juan Pablo Ovalle",
+        specialty: "Médico Especialista en Radiología Fellow en Neurorradiología",
+        experience: "Neurorradiólogo",
+        image: doc3
+      },
+      {
+        id: 4,
+        name: "Dr. Jairo Leon Acevedo",
+        specialty: "Médico Internista / Especialista en Cardióloga / Subespecialista en diagnostico no invasivo",
+        experience: "Cardiólogo",
+        image: doc4,
+      },
+      {
+        id: 5,
+        name: "Dr. Alonso Gómez García",
+        specialty: "Médico Especialista en Pediatría, subespecialista en Cardiología pediátrica hemodinamia en cardiopatías congénitas",
+        experience: "Cardiólogo Pediátria",
+        image: doc5,
+      },
+      {
+        id: 6,
+        name: "Dr. Luis Fernando Grisales",
+        specialty: "Director Científico Médico Especialista en radiología , Fellow en Próstata",
+        experience: "Radiólogo",
+        image: doc6,
+      },
 ];
 
 function SpecialistsGrid() {

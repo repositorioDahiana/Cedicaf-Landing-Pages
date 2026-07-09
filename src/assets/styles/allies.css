@@ -218,14 +218,13 @@ body {
   color: var(--color-text-body);
   margin-bottom: 34px;
 }
-
 /* ==================== STATS / CONVENIOS ==================== */
 
 .allies-hero__stats {
   display: flex;
   flex-wrap: nowrap; /* Conserva tus cajitas alineadas horizontalmente en desktop */
   gap: 12px;
-} cutout-edge,
+}
 
 /* CARD (Estructura flex horizontal: texto al frente del icono) */
 .allies-hero__stat {
@@ -287,7 +286,7 @@ body {
   color: rgba(13, 13, 13, 0.85); 
 }
 
-/* ==================== RESPONSIVE ==================== */
+/* ==================== RESPONSIVE HERO ==================== */
 
 @media (max-width: 768px) {
   .allies-hero {
@@ -295,7 +294,7 @@ body {
   }
 
   .allies-hero__container {
-    padding: 100px 20px 60px; /* Sincronizados los paddings laterales en móvil */
+    padding: 60px 20px 30px; /* Reducido espacio superior e inferior en móvil */
   }
 
   .allies-hero__stats {
@@ -316,7 +315,7 @@ body {
 
 .allies-intro {
   position: relative;
-  padding: 110px 20px;
+  padding: 40px 20px; /* ⚡ Reducido de 110px a 40px para pegar el contenido arriba y abajo */
 
   /* Gradiente limpio que conecta armoniosamente con el sistema de grillas */
   background: linear-gradient(
@@ -324,7 +323,7 @@ body {
     #F8F9FA 0%,
     #F8F9FA 100%
   );
-} cutout-edge,
+}
 
 /* CONTAINER */
 .allies-intro__container {
@@ -339,7 +338,7 @@ body {
   width: 90px;
   height: 5px;
   display: block;
-  margin: 0 auto 24px;
+  margin: 0 auto 16px; /* Bajó de 24px a 16px */
   border-radius: var(--radius-full);
   background: linear-gradient(90deg, var(--color-brand-main), rgba(92, 33, 33, 0.4));
 }
@@ -351,7 +350,7 @@ body {
   font-weight: 700;
   line-height: 1.2;
   color: var(--color-hero-title);
-  margin-bottom: 22px;
+  margin-bottom: 16px; /* Bajó de 22px a 16px */
 }
 
 /* DESCRIPTION */
@@ -362,7 +361,7 @@ body {
   color: var(--color-text-body);
   
   max-width: 760px;
-  margin: 0 auto 38px;
+  margin: 0 auto 24px; /* Reducido el espacio antes del botón de 38px a 24px */
 }
 
 /* BUTTON CONTROLLER */
@@ -379,11 +378,11 @@ body {
   box-shadow: var(--shadow-button-hover); /* Añade profundidad de marca al botón en hover */
 }
 
-/* ==================== RESPONSIVE ==================== */
+/* ==================== RESPONSIVE INTRO ==================== */
 
 @media (max-width: 768px) {
   .allies-intro {
-    padding: 80px 16px; /* Sincronizado el aire lateral móvil */
+    padding: 30px 16px; /* ⚡ Reducido espacio en móvil para evitar saltos gigantes */
   }
 
   .allies-intro__title {
@@ -393,7 +392,7 @@ body {
   .allies-intro__description {
     font-size: 1rem;
     line-height: 1.8;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -401,7 +400,7 @@ body {
 
 .allies-prepaid {
   position: relative;
-  padding: 100px 20px;
+  padding: 40px 20px; /* ⚡ Reducido de 100px a 40px para mantener consistencia visual compacta */
   background: #F8F9FA;
 }
 
@@ -418,19 +417,19 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-lg);
-  min-height: 120px;
+  min-height: auto; /* Quitamos el min-height fijo de 120px para que no estire de más */
   
   display: flex;
   align-items: center;
-  padding: 30px 40px;
-  margin-bottom: 40px;
+  padding: 20px 30px; /* Ajustado el aire interno del banner */
+  margin-bottom: 30px; /* Reducido espacio inferior de 40px a 30px */
 
   /* Color claro basado en la paleta borgoña */
   background: rgba(92, 33, 33, 0.08);
   
   /* Sombras suavizadas acordes al sistema de diseño global */
   box-shadow: var(--shadow-card);
-} cutout-edge,
+}
 
 /* OVERLAY (Migrado a una atmósfera translúcida médica basada en Borgoña) */
 .allies-prepaid__overlay {
@@ -470,7 +469,7 @@ body {
 /* HEADER TITLE */
 .allies-prepaid__title {
   font-family: var(--font-title); /* Fuerza Poppins */
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.00rem, 2.5vw, 3rem);
   font-weight: 700;
   color: var(--color-text-dark); /* Unificado para evitar el azul plano */
   margin-bottom: 8px;
@@ -555,7 +554,7 @@ body {
   color: var(--color-brand-main); /* Cambiado de azul plano a tu Borgoña corporativo */
 }
 
-/* ==================== RESPONSIVE ==================== */
+/* ==================== RESPONSIVE PREPAID ==================== */
 
 @media (max-width: 1100px) {
   .allies-prepaid__grid {
@@ -566,7 +565,7 @@ body {
 
 @media (max-width: 768px) {
   .allies-prepaid {
-    padding: 80px 16px; /* Sincronizado padding móvil lateral */
+    padding: 30px 16px; /* ⚡ Reducido padding superior e inferior en móvil */
   }
 
   .allies-prepaid__header {

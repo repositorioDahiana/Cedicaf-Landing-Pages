@@ -24,8 +24,9 @@ function LocationsHero() {
           </h1>
 
           <p className="locations-hero__description">
-            Estamos presentes en tres ciudades del Eje Cafetero con la mejor
-            tecnología en imágenes diagnósticas y atención humanizada.
+            Estamos presentes en el eje Cafetero , 
+            Norte del valle y Tolima  con la mejor tecnología en 
+            imágenes diagnósticas y atención humanizada.
           </p>
 
           {/* STATS */}

@@ -38,21 +38,21 @@ function OurSpecialists() {
     {
       id: 1,
       name: "Dra. Margarita Maria Patiño Arenas",
-      specialty: "Médico Radiólogo",
+      specialty: "Médica Especialista en Radiología",
       experience: "Radiólogo",
       image: doc1
     },
     {
       id: 2,
       name: "Dra. Ingrid Vivas",
-      specialty: "Médico Radiólogo / Especialista en mamas",
-      experience: "Radiólogo",
+      specialty: "Médica Especialista en Radiología , Especialista en Imágenes de la mama",
+      experience: "Radiólogo / Especialista en Imágenes de la mama",
       image: doc2,
     },
     {
       id: 3,
       name: "Dr. Juan Pablo Ovalle",
-      specialty: "Médico Neurorradiólogo Diagnostico / Neurorradiólogo",
+      specialty: "Médico Especialista en Radiología Fellow en Neurorradiología",
       experience: "Neurorradiólogo",
       image: doc3
     },
@@ -66,14 +66,14 @@ function OurSpecialists() {
     {
       id: 5,
       name: "Dr. Alonso Gómez García",
-      specialty: "Médico Especialista en Pediátria y en Hemodinamia en Cardiopatías Congénita",
+      specialty: "Médico Especialista en Pediatría, subespecialista en Cardiología pediátrica hemodinamia en cardiopatías congénitas",
       experience: "Cardiólogo Pediátria",
       image: doc5,
     },
     {
       id: 6,
       name: "Dr. Luis Fernando Grisales",
-      specialty: "Médico Radiólogo / Director Científico Fellow Resonancia de Prostata",
+      specialty: "Director Científico Médico Especialista en radiología , Fellow en Próstata",
       experience: "Radiólogo",
       image: doc6,
     },

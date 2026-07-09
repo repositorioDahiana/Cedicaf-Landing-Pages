@@ -1,23 +1,21 @@
 import medicinaIcon from "../../assets/Iconos/Aliados3.png";
 
 import logo11 from "../../assets/images/LogoNestle.png";
-import logo12 from "../../assets/images/LogoColmena.png";
 import logo13 from "../../assets/images/LogoPreviser.png";
 import logo14 from "../../assets/images/LogoSentir.png";
 import logo15 from "../../assets/images/LogoHemato.png";
 import logo16 from "../../assets/images/LogoOpositiva.png";
 import logo17 from "../../assets/images/LogoSisa.png";
-
+import logo22 from "../../assets/images/LogoCasur.png";
 
 const allies = [
   { name: "Nestle De Colombia S.A", icon: logo11 },
-  { name: "Colmena Riesgos Laborales ARL", icon: logo12 },
   { name: "Previser", icon: logo13 },
   { name: "Grupo Sentir S.A.S.", icon: logo14 },
   { name: "Hemato Oncologos S.A", icon: logo15 },
   { name: "Positiva Salud Integral Tulua S.A.S", icon: logo16 },
   { name: "SISA Soluciones Integrales En Salud SAS", icon: logo17 },
-
+  { name: "Caja De Sueldos De Retiro De La Policia Nacional", icon: logo22 },
 ];
 
 function AlliesConEmp() {

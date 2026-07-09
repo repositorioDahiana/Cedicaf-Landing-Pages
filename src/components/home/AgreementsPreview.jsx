@@ -24,7 +24,49 @@ import logo20 from "../../assets/images/LogoEmisanar.png";
 import logo21 from "../../assets/images/LogoPolicia.png";
 import logo22 from "../../assets/images/LogoCasur.png";
 import logo23 from "../../assets/images/LogoMaisfen.png";
-
+import logo24 from "../../assets/images/LogoAxaColpatria.png";
+import logo25 from "../../assets/images/Fondo.jpg";
+import logo26 from "../../assets/images/Fondo.jpg";
+import logo27 from "../../assets/images/Fondo.jpg";
+import logo28 from "../../assets/images/Fondo.jpg";
+import logo29 from "../../assets/images/Fondo.jpg";
+import logo30 from "../../assets/images/Fondo.jpg";
+import logo31 from "../../assets/images/Fondo.jpg";
+import logo32 from "../../assets/images/Fondo.jpg";
+import logo33 from "../../assets/images/Fondo.jpg";
+import logo34 from "../../assets/images/Fondo.jpg";
+import logo35 from "../../assets/images/Fondo.jpg";
+import logo36 from "../../assets/images/Fondo.jpg";
+import logo37 from "../../assets/images/Fondo.jpg";
+import logo38 from "../../assets/images/Fondo.jpg";
+import logo39 from "../../assets/images/Fondo.jpg";
+import logo40 from "../../assets/images/Fondo.jpg";
+import logo41 from "../../assets/images/Fondo.jpg";
+import logo42 from "../../assets/images/Fondo.jpg";
+import logo43 from "../../assets/images/Fondo.jpg";
+import logo44 from "../../assets/images/Fondo.jpg";
+import logo45 from "../../assets/images/Fondo.jpg";
+import logo46 from "../../assets/images/Fondo.jpg";
+import logo47 from "../../assets/images/Fondo.jpg";
+import logo48 from "../../assets/images/Fondo.jpg";
+import logo49 from "../../assets/images/Fondo.jpg";
+import logo50 from "../../assets/images/Fondo.jpg";
+import logo51 from "../../assets/images/Fondo.jpg";
+import logo52 from "../../assets/images/Fondo.jpg";
+import logo53 from "../../assets/images/Fondo.jpg";
+import logo54 from "../../assets/images/Fondo.jpg";
+import logo55 from "../../assets/images/Fondo.jpg";
+import logo56 from "../../assets/images/Fondo.jpg";
+import logo57 from "../../assets/images/Fondo.jpg";
+import logo58 from "../../assets/images/Fondo.jpg";
+import logo59 from "../../assets/images/Fondo.jpg";
+import logo60 from "../../assets/images/Fondo.jpg";
+import logo61 from "../../assets/images/Fondo.jpg";
+import logo62 from "../../assets/images/Fondo.jpg";
+import logo63 from "../../assets/images/Fondo.jpg";
+import logo64 from "../../assets/images/Fondo.jpg";
+import logo65 from "../../assets/images/Fondo.jpg";
+import logo66 from "../../assets/images/Fondo.jpg";
 
 function AgreementsPreview() {
   const categories = [
@@ -38,6 +80,8 @@ function AgreementsPreview() {
         { name: "Colmedica S.A.", icon: logo3 },
         { name: "Medisanitas", icon: logo4 },
         { name: "Medplus S.A", icon: logo5 },
+        { name: "Axa Colpatria Medicina Prepagada y Polizas", icon: logo24 },
+        { name: "Compañía De Seguros Bolívar", icon: logo7 },
       ]
     },
     {
@@ -50,6 +94,16 @@ function AgreementsPreview() {
         { name: "Axa Colpatria Seguros De Vida S.A", icon: logo8 },
         { name: "Allianz Seguros De Vida S.A", icon: logo9 },
         { name: "Positiva Compañía De Seguros", icon: logo10 },
+        { name: "Colmena Riesgos Laborales ARL", icon: logo12 },
+        { name: "Aseguradora Solidaria De Colombia", icon: logo25 },
+        { name: "Bmi Colombia Compañia De Seguros De Vida S.A.", icon: logo26 },
+        { name: "Compañía De Seguros Aurora", icon: logo27 },
+        { name: "Compañia Mundial de Seguros (polizas)", icon: logo28 },
+        { name: "La Equidad Seguros De Vida", icon: logo29 },
+        { name: "HDI Seguros Colombia (antes Liberty)", icon: logo30 },
+        { name: "Mapfre Colombia Vida Seguros (Arl-Polizas De Salud Y Estudiantil)", icon: logo31 },
+        { name: "Pan American Life De Colombia", icon: logo32 },
+        { name: "Positiva Compañia De Seguros Arl", icon: logo33 },
       ]
     },
     {
@@ -58,12 +112,45 @@ function AgreementsPreview() {
       description: "Beneficios exclusivos para empleados y colaboradores de empresas aliadas.",
       allies: [
         { name: "Nestle De Colombia S.A", icon: logo11 },
-        { name: "Colmena Riesgos Laborales ARL", icon: logo12 },
         { name: "Previser", icon: logo13 },
         { name: "Grupo Sentir S.A.S.", icon: logo14 },
         { name: "Hemato Oncologos S.A", icon: logo15 },
         { name: "Positiva Salud Integral Tulua S.A.S", icon: logo16 },
         { name: "SISA Soluciones Integrales En Salud SAS", icon: logo17 },
+        { name: "Caja De Sueldos De Retiro De La Policia Nacional", icon: logo22 },
+        { name: "Foncaficentro", icon: logo34 },
+        { name: "Fundacion Parque De La Cultura Cafetera", icon: logo35 },
+        { name: "Fundacion Cardiomet CEQUIN", icon: logo36 },
+        { name: "Fondo de empleados de la universidad del quindio", icon: logo37 },
+        { name: "Secretaria De Salud Tolima", icon: logo38 },
+        { name: "Sanar San Angel", icon: logo39 },
+        { name: "Clínica Medicina Deportiva", icon: logo40 },
+        { name: "Uniser", icon: logo41 },
+        { name: "Unisalud", icon: logo42 },
+        { name: "Benefiser Maria Del Rosario Angulo Godoy", icon: logo43 },
+        { name: "Maria Zoraida Zambrano Renaser", icon: logo44 },
+        { name: "Progresar Oscar Eduardo Ricardo Marin", icon: logo45 },
+        { name: "Servifamiliar (Nohora Alicia Muñoz)", icon: logo46 },
+        { name: "Conexiones Y Salud", icon: logo47 },
+        { name: "Contacto Medico", icon: logo48 },
+        { name: "Deportes Quindio S.A", icon: logo49 },
+        { name: "Med-Descuento", icon: logo50 },
+        { name: "Medical Health", icon: logo51 },
+        { name: "Melva Martinez Martinez-Centro Medico Rodrigo Arango", icon: logo52 },
+        { name: "Clinimagenes", icon: logo53 },
+        { name: "Dr. Johan F. Valderrama", icon: logo54 },
+        { name: "Marsan Fisioterapia", icon: logo55 },
+        { name: "Aliados Promotora De Servicios S.A.S (Granred)", icon: logo56 },
+        { name: "Angela Agadir Cardona Rojas (Servimano)", icon: logo57 },
+        { name: "Emi", icon: logo58 },
+        { name: "Feser", icon: logo59 },
+        { name: "Fundación Vive Con Bienestar", icon: logo60 },
+        { name: "Medic-Enfer (Mauricio Marin)", icon: logo61 },
+        { name: "Red Medica Vital", icon: logo62 },
+        { name: "Hwcc Human Wellness Center Colombia S.A.S.", icon: logo63 },
+        { name: "Caja de compensación Familiar de Risaralda", icon: logo64 },
+        { name: "Comfenalco Quindio", icon: logo65 },
+        { name: "Corporación Integral de Vivienda de Impacto Ambiental", icon: logo66 },
       ]
     },
     {
@@ -75,7 +162,6 @@ function AgreementsPreview() {
         { name: "Servicio Occidental De Salud S.O.S.", icon: logo19 },
         { name: "Emssanar S.A.S", icon: logo20 },
         { name: "Regional De Aseguramiento En Salud N°4", icon: logo21 },
-        { name: "Caja De Sueldos De Retiro De La Policia Nacional", icon: logo22 },
         { name: "Union Temporal Salud Integral Maisfen", icon: logo23 },
       ]
     },
