@@ -345,7 +345,7 @@ function VacanciesSection() {
         {/* CTA (LLAMADO A LA ACCIÓN) */}
         <div className="vacancies__cta">
           <p>¿No encuentras tu área? Envíanos tu hoja de vida de todas formas.</p>
-          <a href="#postular" className="btn-base btn-primary-blue">
+          <a href="#postular" className="btn-base btn-primary-brand">
             Postularme ahora
           </a>
         </div>

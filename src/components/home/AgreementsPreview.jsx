@@ -25,48 +25,47 @@ import logo21 from "../../assets/images/LogoPolicia.png";
 import logo22 from "../../assets/images/LogoCasur.png";
 import logo23 from "../../assets/images/LogoMaisfen.png";
 import logo24 from "../../assets/images/LogoAxaColpatria.png";
-import logo25 from "../../assets/images/Fondo.jpg";
-import logo26 from "../../assets/images/Fondo.jpg";
-import logo27 from "../../assets/images/Fondo.jpg";
-import logo28 from "../../assets/images/Fondo.jpg";
-import logo29 from "../../assets/images/Fondo.jpg";
-import logo30 from "../../assets/images/Fondo.jpg";
-import logo31 from "../../assets/images/Fondo.jpg";
-import logo32 from "../../assets/images/Fondo.jpg";
-import logo33 from "../../assets/images/Fondo.jpg";
-import logo34 from "../../assets/images/Fondo.jpg";
-import logo35 from "../../assets/images/Fondo.jpg";
-import logo36 from "../../assets/images/Fondo.jpg";
-import logo37 from "../../assets/images/Fondo.jpg";
-import logo38 from "../../assets/images/Fondo.jpg";
-import logo39 from "../../assets/images/Fondo.jpg";
-import logo40 from "../../assets/images/Fondo.jpg";
-import logo41 from "../../assets/images/Fondo.jpg";
-import logo42 from "../../assets/images/Fondo.jpg";
-import logo43 from "../../assets/images/Fondo.jpg";
-import logo44 from "../../assets/images/Fondo.jpg";
-import logo45 from "../../assets/images/Fondo.jpg";
-import logo46 from "../../assets/images/Fondo.jpg";
-import logo47 from "../../assets/images/Fondo.jpg";
-import logo48 from "../../assets/images/Fondo.jpg";
-import logo49 from "../../assets/images/Fondo.jpg";
-import logo50 from "../../assets/images/Fondo.jpg";
-import logo51 from "../../assets/images/Fondo.jpg";
-import logo52 from "../../assets/images/Fondo.jpg";
-import logo53 from "../../assets/images/Fondo.jpg";
-import logo54 from "../../assets/images/Fondo.jpg";
-import logo55 from "../../assets/images/Fondo.jpg";
-import logo56 from "../../assets/images/Fondo.jpg";
-import logo57 from "../../assets/images/Fondo.jpg";
-import logo58 from "../../assets/images/Fondo.jpg";
-import logo59 from "../../assets/images/Fondo.jpg";
-import logo60 from "../../assets/images/Fondo.jpg";
-import logo61 from "../../assets/images/Fondo.jpg";
-import logo62 from "../../assets/images/Fondo.jpg";
-import logo63 from "../../assets/images/Fondo.jpg";
-import logo64 from "../../assets/images/Fondo.jpg";
-import logo65 from "../../assets/images/Fondo.jpg";
-import logo66 from "../../assets/images/Fondo.jpg";
+import logo25 from "../../assets/images/LogoAsegSolCol.png";
+import logo26 from "../../assets/images/LogoBMI.png";
+import logo27 from "../../assets/images/LogoAurora.png";
+import logo28 from "../../assets/images/LogoSeguros.png";
+import logo29 from "../../assets/images/LogoEquidadSeguros.png";
+import logo30 from "../../assets/images/LogoHDI.png";
+import logo31 from "../../assets/images/LogoMapfre.png";
+import logo32 from "../../assets/images/LogoPanAmerican.png";
+import logo34 from "../../assets/images/LogoFoncaficentro.png";
+import logo35 from "../../assets/images/LogoParqueCafe.png";
+import logo36 from "../../assets/images/LogoCardiomet.png";
+import logo37 from "../../assets/images/LogoFondoEmpleadoQ.png";
+import logo38 from "../../assets/images/LogoSecretaruaTolima.png";
+import logo39 from "../../assets/images/LogoSanAngel.png";
+import logo40 from "../../assets/images/LogoCMD.jpg";
+import logo41 from "../../assets/images/LogoUniser.png";
+import logo42 from "../../assets/images/LogoUnisalud.png";
+import logo43 from "../../assets/images/LogoBenefiser.png";
+import logo44 from "../../assets/images/LogoRenaser.png";
+import logo45 from "../../assets/images/LogoProgresar.png";
+import logo46 from "../../assets/images/LogoServifamiliar.png";
+import logo47 from "../../assets/images/LogoConexion.png";
+import logo48 from "../../assets/images/LogoContactoMed.png";
+import logo49 from "../../assets/images/LogoQuindio.png";
+import logo50 from "../../assets/images/LogoMedescuento.png";
+import logo51 from "../../assets/images/LogoMedicalH.png";
+import logo52 from "../../assets/images/LogoCentroRodrigo.png";
+import logo53 from "../../assets/images/LogoClinimagenes.png";
+import logo54 from "../../assets/images/LogoJohan.png";
+import logo55 from "../../assets/images/LogoFisoMarsan.png";
+import logo56 from "../../assets/images/LogoGranred.jpg";
+import logo57 from "../../assets/images/LogoServimano.png";
+import logo58 from "../../assets/images/LogoEmi.webp";
+import logo59 from "../../assets/images/LogoFeser.png";
+import logo60 from "../../assets/images/LogoBive.png";
+import logo61 from "../../assets/images/LogoMedicenfer.png";
+import logo62 from "../../assets/images/LogoVital.png";
+import logo63 from "../../assets/images/LogoHuman.png";
+import logo64 from "../../assets/images/LogoRisaralda.png";
+import logo65 from "../../assets/images/LogoComfenalco.png";
+import logo66 from "../../assets/images/LogoAmbiente.png";
 
 function AgreementsPreview() {
   const categories = [
@@ -103,7 +102,6 @@ function AgreementsPreview() {
         { name: "HDI Seguros Colombia (antes Liberty)", icon: logo30 },
         { name: "Mapfre Colombia Vida Seguros (Arl-Polizas De Salud Y Estudiantil)", icon: logo31 },
         { name: "Pan American Life De Colombia", icon: logo32 },
-        { name: "Positiva Compañia De Seguros Arl", icon: logo33 },
       ]
     },
     {

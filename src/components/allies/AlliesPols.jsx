@@ -6,15 +6,14 @@ import logo8 from "../../assets/images/LogoAxaColpatria.png";
 import logo9 from "../../assets/images/LogoAllianz.png";
 import logo10 from "../../assets/images/LogoPositiva.png";
 import logo12 from "../../assets/images/LogoColmena.png";
-import logo25 from "../../assets/images/Fondo.jpg";
-import logo26 from "../../assets/images/Fondo.jpg";
-import logo27 from "../../assets/images/Fondo.jpg";
-import logo28 from "../../assets/images/Fondo.jpg";
-import logo29 from "../../assets/images/Fondo.jpg";
-import logo30 from "../../assets/images/Fondo.jpg";
-import logo31 from "../../assets/images/Fondo.jpg";
-import logo32 from "../../assets/images/Fondo.jpg";
-import logo33 from "../../assets/images/Fondo.jpg";
+import logo25 from "../../assets/images/LogoAsegSolCol.png";
+import logo26 from "../../assets/images/LogoBMI.png";
+import logo27 from "../../assets/images/LogoAurora.png";
+import logo28 from "../../assets/images/LogoSeguros.png";
+import logo29 from "../../assets/images/LogoEquidadSeguros.png";
+import logo30 from "../../assets/images/LogoHDI.png";
+import logo31 from "../../assets/images/LogoMapfre.png";
+import logo32 from "../../assets/images/LogoPanAmerican.png";
 
 const allies = [
   { name: "Seguros De Vida Suramericana S.A", icon: logo6 },
@@ -31,7 +30,6 @@ const allies = [
   { name: "HDI Seguros Colombia (antes Liberty)", icon: logo30 },
   { name: "Mapfre Colombia Vida Seguros (Arl-Polizas De Salud Y Estudiantil)", icon: logo31 },
   { name: "Pan American Life De Colombia", icon: logo32 },
-  { name: "Positiva Compañia De Seguros Arl", icon: logo33 },
 ];
 
 function AlliesPols() {

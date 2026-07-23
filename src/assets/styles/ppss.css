@@ -187,7 +187,7 @@ body {
   max-width: 1400px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 30px 32px 30px;
+  padding: 30px 20px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -318,7 +318,7 @@ body {
 
 .ppss-axes {
   position: relative;
-  padding: 110px 20px;
+  padding: 30px 20px;
   
   /* Gradiente de fondo unificado y limpio hacia el gris tecnológico de la app */
   background: linear-gradient(
@@ -515,7 +515,7 @@ body {
 
 .user-association {
   position: relative;
-  padding: 110px 20px;
+  padding: 30px 10px;
   background: #F8F9FA;
 } cutout-edge,
 

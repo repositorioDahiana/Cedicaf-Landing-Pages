@@ -187,7 +187,7 @@ body {
   max-width: 1400px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 30px 32px 30px;
+  padding: 30px 32px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -310,7 +310,7 @@ body {
 /* ==================== PATIENT HUMANIZATION ==================== */
 
 .patient-humanization {
-  padding: 90px 20px;
+  padding: 30px 10px;
   background: #F8F9FA; /* Ajustado a tu variable global de fondo sutil para mantener consistencia */
 }
 
@@ -322,7 +322,7 @@ body {
 /* ==================== PATIENT HUMANIZATION ==================== */
 
 .patient-humanization {
-  padding: 90px 20px;
+  padding: 40px 20px;
   background: #F8F9FA; /* Sincronizado con el fondo sutil de la app */
 }
 
@@ -478,6 +478,7 @@ body {
   line-height: 1.9;
   color: var(--color-text-body);
   margin: 0;
+  margin-bottom: 20px;
 }
 
 /* ==================== RESPONSIVE ==================== */
@@ -518,7 +519,7 @@ body {
 /* ==================== PATIENT POLICY ==================== */
 
 .patient-policy {
-  padding: 90px 20px;
+  padding: 30px 10px;
   background: #F8F9FA; /* Fondo gris tecnológico sutil de la app */
 }
 
@@ -571,7 +572,7 @@ body {
   background: var(--bg-card); /* 255, 255, 255, 0.88 con opacidad premium */
   border: 1px solid var(--color-border-soft);
   box-shadow: var(--shadow-card);
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 }
 
 /* Estructura original intacta: texto al frente del icono */
@@ -741,7 +742,7 @@ body {
 /* ==================== PATIENT PARTICIPATION ==================== */
 
 .patient-participation {
-  padding: 90px 20px;
+  padding: 30px 10px;
   background: #F8F9FA; /* Fondo gris tecnológico sutil de la app */
 }
 

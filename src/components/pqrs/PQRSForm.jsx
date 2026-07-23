@@ -7,18 +7,60 @@ import { useState } from "react";
 
 function PQRSForm() {
 
-    const [selectedType, setSelectedType] = useState("Petición");
+  const [selectedType, setSelectedType] = useState("Petición");
 
-    const [formData, setFormData] = useState({
-        lugarAtencion: "",
-        });
+  const [formData, setFormData] = useState({
+    lugarAtencion: "",
+    procedimiento: "",
+  });
 
-        const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-        });
-        };
+  const estudiosPorSede = {
+    "pereira": [
+      "Resonancias convencionales (simples, contrastadas y bajo sedación)",
+      "Resonancias Especiales (Próstata, glúteos, Enteroresonancia, Uroresonancia y defecografía)",
+      "Angiorresonancias de cerebro y cuello",
+      "Resonancia con protocolo de Recto",
+      "Resonancia de Corazón"
+    ],
+    "armenia": [
+      "Resonancias convencionales (simples, contrastadas y bajo sedación)",
+      "Resonancias Especiales (Próstata, glúteos, Enteroresonancia, Uroresonancia, defecografía y angiorresonancias de cerebro y cuello)",
+      "Tomografías convencionales (simples, contrastadas y bajo sedación)",
+      "Angiotomografías de cerebro, cuello, tórax y abdomen (Multicorte y tridimensional)"
+    ],
+    "ibague-resonancia": [
+      "Resonancias convencionales (simples, contrastadas y bajo sedación)",
+      "Resonancias Especiales (Próstata, glúteos, Enteroresonancia, Uroresonancia, defecografía y angiorresonancias de cerebro y cuello)"
+    ],
+    "ibague-medicina-nuclear": [
+      "Resonancias convencionales (simples, contrastadas y bajo sedación)",
+      "Resonancias Especiales (Próstata, glúteos, Enteroresonancia, Uroresonancia, defecografía y angiorresonancias de cerebro y cuello)",
+      "Medicina Nuclear: Gammagrafías (corporal, tiroides, pulmonar), Perfusión miocárdica, Renograma y Captación Tiroidea 4-24 Horas"
+    ],
+    "tulua": [
+      "Resonancias convencionales (simples, contrastadas y bajo sedación)",
+      "Resonancias Especiales (Próstata, glúteos, Enteroresonancia, Uroresonancia, defecografía y angiorresonancias de cerebro y cuello)",
+      "Tomografías convencionales (simples, contrastadas y bajo sedación)",
+      "Angiotomografías de cerebro, cuello, tórax y abdomen (Multicorte y tridimensional)",
+      "Radiografías convencionales y Panorámicas",
+      "Ecografías convencionales y Doppler",
+      "Consulta de Cardiología Adulto y Pediátrica",
+      "Monitoreo de presión arterial (MAPA)",
+      "Holter",
+      "Electrocardiograma",
+      "Pruebas de Esfuerzo",
+      "Ecocardiograma Transtorácico",
+      "Ecocardiograma Stress con Ejercicio",
+      "Tomas de muestras de Laboratorio"
+    ]
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   return (
     <section className="pqrs-form">
@@ -51,62 +93,57 @@ function PQRSForm() {
 
             <div className="pqrs-form__types">
 
-                <button
-                    className={`pqrs-form__type ${
-                    selectedType === "Petición" ? "active" : ""
-                    }`}
-                    onClick={() => setSelectedType("Petición")}
-                    type="button"
-                >
-                    <img src={peticionIcon} alt="Petición" />
-                    <span>Petición</span>
-                </button>
+              <button
+                className={`pqrs-form__type ${selectedType === "Petición" ? "active" : ""
+                  }`}
+                onClick={() => setSelectedType("Petición")}
+                type="button"
+              >
+                <img src={peticionIcon} alt="Petición" />
+                <span>Petición</span>
+              </button>
 
-                <button
-                    className={`pqrs-form__type ${
-                    selectedType === "Queja" ? "active" : ""
-                    }`}
-                    onClick={() => setSelectedType("Queja")}
-                    type="button"
-                >
-                    <img src={quejaIcon} alt="Queja" />
-                    <span>Queja</span>
-                </button>
+              <button
+                className={`pqrs-form__type ${selectedType === "Queja" ? "active" : ""
+                  }`}
+                onClick={() => setSelectedType("Queja")}
+                type="button"
+              >
+                <img src={quejaIcon} alt="Queja" />
+                <span>Queja</span>
+              </button>
 
-                <button
-                    className={`pqrs-form__type ${
-                    selectedType === "Reclamo" ? "active" : ""
-                    }`}
-                    onClick={() => setSelectedType("Reclamo")}
-                    type="button"
-                >
-                    <img src={reclamoIcon} alt="Reclamo" />
-                    <span>Reclamo</span>
-                </button>
+              <button
+                className={`pqrs-form__type ${selectedType === "Reclamo" ? "active" : ""
+                  }`}
+                onClick={() => setSelectedType("Reclamo")}
+                type="button"
+              >
+                <img src={reclamoIcon} alt="Reclamo" />
+                <span>Reclamo</span>
+              </button>
 
-                <button
-                    className={`pqrs-form__type ${
-                    selectedType === "Sugerencia" ? "active" : ""
-                    }`}
-                    onClick={() => setSelectedType("Sugerencia")}
-                    type="button"
-                >
-                    <img src={sugerenciaIcon} alt="Sugerencia" />
-                    <span>Sugerencia</span>
-                </button>
+              <button
+                className={`pqrs-form__type ${selectedType === "Sugerencia" ? "active" : ""
+                  }`}
+                onClick={() => setSelectedType("Sugerencia")}
+                type="button"
+              >
+                <img src={sugerenciaIcon} alt="Sugerencia" />
+                <span>Sugerencia</span>
+              </button>
 
-                <button
-                    className={`pqrs-form__type ${
-                    selectedType === "Felicitaciones" ? "active" : ""
-                    }`}
-                    onClick={() => setSelectedType("Felicitaciones")}
-                    type="button"
-                >
-                    <img src={felicitacionIcon} alt="Felicitaciones" />
-                    <span>Felicitaciones</span>
-                </button>
+              <button
+                className={`pqrs-form__type ${selectedType === "Felicitaciones" ? "active" : ""
+                  }`}
+                onClick={() => setSelectedType("Felicitaciones")}
+                type="button"
+              >
+                <img src={felicitacionIcon} alt="Felicitaciones" />
+                <span>Felicitaciones</span>
+              </button>
 
-                </div>
+            </div>
 
           </div>
 
@@ -115,83 +152,61 @@ function PQRSForm() {
 
             {/* LUGAR DE ATENCIÓN */}
             <div className="pqrs-form__group">
-            <label>
+              <label>
                 Lugar de atención <span>*</span>
-            </label>
+              </label>
 
-            <select
+              <select
                 name="lugarAtencion"
                 value={formData.lugarAtencion}
                 onChange={handleChange}
                 required
-            >
+              >
                 <option value="">
-                Selecciona una sede
+                  Selecciona una sede
                 </option>
 
-                <option value="los-rosales">
-                Radiólogos Asociados Sede Clínica Los Rosales —
-                Avenida Circunvalar No. 3-01 Torre B Piso 2
-                </option>
-
-                <option value="comfamiliar">
-                Radiólogos Asociados Sede Clínica Comfamiliar —
-                Avenida Circunvalar No. 3-01 Torre B Piso 2
-                </option>
-
-                <option value="san-rafael">
-                Radiólogos Asociados Sede Clínica San Rafael Megacentro —
-                Carrera 19 No. 12-32 Primer piso
-                </option>
-
-                <option value="corazon">
-                Radiólogos Asociados Sede Centro Médico para el Corazón —
-                Carrera 9 No. 25-25 Torre C Piso 4 Clínica Rosales
-                </option>
-
-                <option value="megacentro-pinares">
-                Radiólogos Asociados Sede Megacentro Pinares —
-                Carrera 18 No. 12-75 Torre 2 Local 208
-                </option>
-
-                <option value="mujer">
-                Radiólogos Asociados Sede Centro Médico De La Mujer —
-                Carrera 9 No. 25-25 Torre C Piso 4 Clínica Rosales
-                </option>
-
-                <option value="san-joaquin">
-                Radiólogos Asociados Sede ESE San Joaquín —
-                Carrera 26 No. 78-80 Barrio Cuba
-                </option>
-
-                <option value="salud-centro">
-                Radiólogos Asociados Sede ESE Salud del Centro —
-                Carrera 7 No. 40-34
-                </option>
-
-                <option value="cartago">
-                Radiólogos Asociados Sede Cartago Centro —
-                Carrera 5 No. 7-88
-                </option>
-
-                <option value="mariscal">
-                Radiólogos Asociados Sede Mariscal —
-                Carrera 5 No. 8-55
+                <option value="pereira">
+                  Cedicaf Sede Pereira — Cra. 15 No 13-28 Barrio Los Alpes
                 </option>
 
                 <option value="armenia">
-                Radiólogos Asociados Sede Armenia —
-                Carrera 12 1A norte-20 local 101-102
+                  Cedicaf Sede Armenia — Cl 2 N 12-32 Alcázar
                 </option>
 
-            </select>
+                <option value="ibague-resonancia">
+                  Cedicaf Sede Ibagué Resonancia — Calle 18 No 7-102 Barrio Interlaken
+                </option>
+
+                <option value="ibague-medicina-nuclear">
+                  Cedicaf Sede Ibagué Medicina Nuclear — Calle 18 N 7-88 Barrio Interlaken
+                </option>
+
+                <option value="tulua">
+                  Cedicaf Sede Tuluá — Carrera 34 No 27-33
+                </option>
+
+              </select>
             </div>
 
             <div className="pqrs-form__group">
               <label>Procedimiento realizado *</label>
 
-              <select>
-                <option></option>
+              <select
+                name="procedimiento"
+                value={formData.procedimiento}
+                onChange={handleChange}
+                required
+                disabled={!formData.lugarAtencion}
+              >
+                <option value="">
+                  {formData.lugarAtencion ? "Selecciona un procedimiento" : "Primero selecciona una sede"}
+                </option>
+                {formData.lugarAtencion && estudiosPorSede[formData.lugarAtencion]?.map((estudio, index) => (
+                  <option key={index} value={estudio}>
+                    {estudio}
+                  </option>
+                ))}
               </select>
             </div>
 
@@ -329,7 +344,7 @@ function PQRSForm() {
           {/* BUTTONS */}
           <div className="pqrs-form__actions">
 
-            <button className="btn-base btn-primary-blue">
+            <button className="btn-base btn-primary-brand">
               Enviar PQRS
             </button>
 
